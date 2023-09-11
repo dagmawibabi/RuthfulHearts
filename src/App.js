@@ -27,7 +27,7 @@ function App() {
   }
  
 
-  // useEffect(() => {changeHeaderImage()}, [])
+  useEffect(() => {changeHeaderImage()}, [])
   
   return (
     <div className="bg-[#151515] w-screen h-screen text-white">
