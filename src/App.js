@@ -3,6 +3,8 @@ import AboutSection from "./components/aboutSection";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Navigation from "./components/navigation";
+import ContactUs from "./components/contactUs";
+import ThankYou from "./components/thankYou";
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navigation />
       <Header />
       <AboutSection />
+      <ContactUs />
+      <ThankYou />
       <Footer />
 
       <Loglib
