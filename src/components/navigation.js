@@ -14,12 +14,12 @@ export default function Navigation() {
         <a href="#contact" rel="noreferrer">
           <span> Contact </span>
         </a>
-        <div className="bg-cyan-500 hover:bg-pink-500 duration-300 px-5 py-2 rounded text-black">
+        <div className="bg-cyan-500 hover:bg-pink-500 duration-300 px-5 py-2 rounded-lg text-black">
           <a href="#donations" rel="noreferrer">
             <span> Donate </span>
           </a>
         </div>
-        <div className="bg-white hover:bg-pink-500 duration-300 px-6 py-2 rounded text-black">
+        <div className="bg-red-300 hover:bg-pink-500 duration-300 px-6 py-2 rounded-lg text-black">
           <a href="#thanks" rel="noreferrer">
             <span> Thank You </span>
           </a>

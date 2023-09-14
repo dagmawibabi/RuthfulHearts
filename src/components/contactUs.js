@@ -5,7 +5,7 @@ export default function ContactUs() {
   return (
     <div className="w-screen h-screen text-center pt-52" id="contact">
       <div className="text-5xl font-bold">Would you like to reach out?</div>
-      <div className="flex justify-center pt-32  gap-10">
+      <div className="flex justify-center pt-32  gap-10 cursor-pointer">
         <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-pink-500 [&>*:first-child]:hover:border-cyan-500">
           <div className="rounded-3xl p-2 bg-white border-4  ">
             <img src={instagram} alt="instagram" className="w-20 h-20" />
@@ -21,8 +21,7 @@ export default function ContactUs() {
       </div>
 
       <div className="mt-36 font-bold text-2xl">
-        {" "}
-        We would love to get in touch!{" "}
+        We would love to get in touch!
       </div>
     </div>
   );

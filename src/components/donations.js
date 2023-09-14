@@ -20,7 +20,7 @@ export default function Donations() {
               </div>
             </div>
           </div>
-          <div className="step step-success py-2">
+          <div className="step step-success py-2 cursor-default">
             <div className="w-full px-10">
               <div className="border border-neutral-700 text-center py-4 px-10 font-bold text-xl bg-gradient-to-r from-neutral-900 via-neutral-800 to-neutral-900 rounded-full">
                 Choose any<span className="text-pink-500">*</span> Donation
@@ -28,7 +28,7 @@ export default function Donations() {
               </div>
             </div>
           </div>
-          <div className="step step-success py-3 ">
+          <div className="step step-success py-3 cursor-default">
             <div className="py-2 w-full px-10 flex gap-3">
               <div className="py-3 pl-6 pr-5 rounded-tl-full rounded-bl-full font-bold text-black border border-dashed border-emerald-500 text-x">
                 <img src={chapa} alt="chapa" className="w-14 " />
