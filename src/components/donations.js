@@ -4,7 +4,7 @@ import chapa from "../images/icons/chapa.png";
 
 export default function Donations() {
   return (
-    <div className="w-screen h-screen text-center pt-36" id="donations">
+    <div className="w-screen h-screen text-center pt-36" id="donate">
       <div className="text-5xl font-bold"> Donate Now </div>
 
       {/* STEPS TO DONATE */}

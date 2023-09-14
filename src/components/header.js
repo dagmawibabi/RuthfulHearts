@@ -45,11 +45,10 @@ export default function Header() {
         <div className="w-2/5 h-fit pt-56 ">
           <div className="text-6xl leading-tight pb-1 font-bold">
             <p>
-              Changing
+              Changing{" "}
               <span className="text-pink-500 text-7xl hover:text-cyan-400 duration-300">
-                {" "}
-                1*{" "}
-              </span>
+                1*
+              </span>{" "}
               Person's <br /> Life one at a time
             </p>
           </div>
@@ -63,17 +62,21 @@ export default function Header() {
             lives of people in need.
           </div>
           {/* CTA */}
-          <div className="flex pt-8 cursor-pointer gap-5">
-            <div className="bg-gray-700 w-72 rounded-md">
-              <div className="bg-cyan-500 w-72 px-8 py-2 -m-1 rounded-md font-bold text-black text-2xl hover:bg-pink-500 duration-200">
-                Donate Right Now!
+          <div className="flex pt-12 cursor-pointer gap-5">
+            <a href="#donate" rel="noreferrer">
+              <div className="bg-gray-700 w-72 rounded-full">
+                <div className="bg-cyan-500 w-72 px-8 py-2 -m-1 rounded-full font-bold text-black text-2xl hover:bg-emerald-500 duration-200">
+                  Donate Right Now!
+                </div>
               </div>
-            </div>
-            <div className="bg-gray-700 w-56 h-12 rounded-md text-center ">
-              <div className="bg-slate-100 px-6 py-2 w-full h-full -m-1 rounded-md font-bold text-black text-2xl hover:bg-pink-500 duration-200">
-                Learn More
+            </a>
+            <a href="#about" rel="noreferrer">
+              <div className="bg-gray-700 w-56 h-12 rounded-full text-center ">
+                <div className="bg-slate-100 px-6 py-2 w-full h-full -m-1 rounded-full font-bold text-black text-2xl hover:bg-pink-500 duration-200">
+                  Learn More
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 

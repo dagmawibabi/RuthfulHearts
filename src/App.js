@@ -9,7 +9,7 @@ import Donations from "./components/donations";
 
 function App() {
   return (
-    <div className="bg-[#151515] w-screen h-fit text-white scroll-smooth">
+    <div className="bg-[#151515] w-screen h-fit text-white">
       <Loglib
         config={{
           id: "ruthfulhearts_vercel",
