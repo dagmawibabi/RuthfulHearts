@@ -5,6 +5,7 @@ import Header from "./components/header";
 import Navigation from "./components/navigation";
 import ContactUs from "./components/contactUs";
 import ThankYou from "./components/thankYou";
+import Donations from "./components/donations";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navigation />
       <Header />
       <AboutSection />
+      <Donations />
       <ContactUs />
       <ThankYou />
       <Footer />

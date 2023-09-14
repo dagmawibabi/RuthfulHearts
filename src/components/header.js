@@ -39,40 +39,38 @@ export default function Header() {
   // useEffect(() => {changeHeaderImage()}, [])
 
   return (
-    <div className="w-screen h-[90%]">
+    <div className="w-screen h-[90%]" id="home">
       <div className="relative pl-56 flex">
         {/* Header Text */}
-        <div className="w-2/5 h-fit mt-56  ">
-          <div className="text-6xl leading-tight mb-1 font-bold">
+        <div className="w-2/5 h-fit pt-56 ">
+          <div className="text-6xl leading-tight pb-1 font-bold">
             <p>
               Changing
-              <span className="text-pink-500 text-7xl hover:text-cyan-400">
+              <span className="text-pink-500 text-7xl hover:text-cyan-400 duration-300">
                 {" "}
                 1*{" "}
               </span>
               Person's <br /> Life one at a time
             </p>
           </div>
-          <span className="text-pink-500 font-bold text-3xl"> * </span>{" "}
+          <span className="text-pink-500 font-bold text-3xl"> * </span>
           <span className="text-cyan-400 font-bold text-xl">
-            {" "}
             = more with your help
           </span>
-          <p className="text-2xl leading-snug mt-5 w-11/12">
-            {" "}
+          <div className="text-2xl leading-snug pt-5 w-11/12">
             Ruthful Hearts is aiming to change people's lives one person at a
             time. Using anonymous donations we make meaningful changes on the
             lives of people in need.
-          </p>
+          </div>
           {/* CTA */}
-          <div className="flex mt-8 mr-5 cursor-pointer">
+          <div className="flex pt-8 cursor-pointer gap-5">
             <div className="bg-gray-700 w-72 rounded-md">
-              <div className="bg-pink-500 w-72 px-8 py-2 -m-1 rounded-md font-bold text-black text-2xl hover:bg-cyan-400 duration-200">
+              <div className="bg-cyan-500 w-72 px-8 py-2 -m-1 rounded-md font-bold text-black text-2xl hover:bg-pink-500 duration-200">
                 Donate Right Now!
               </div>
             </div>
-            <div className="bg-gray-700 w-56 h-12 rounded-md ml-5 text-center ">
-              <div className="bg-slate-100 px-6 py-2 w-full h-full -m-1 rounded-md font-bold text-black text-2xl hover:bg-cyan-400 duration-200">
+            <div className="bg-gray-700 w-56 h-12 rounded-md text-center ">
+              <div className="bg-slate-100 px-6 py-2 w-full h-full -m-1 rounded-md font-bold text-black text-2xl hover:bg-pink-500 duration-200">
                 Learn More
               </div>
             </div>
@@ -80,11 +78,11 @@ export default function Header() {
         </div>
 
         {/* Header Image */}
-        <div className="ml-20 h-fit -mt-20 -scale-x-100">
+        <div className="h-fit -scale-x-100 ">
           <img
             src={headerImages[currentHeaderImageIndex]}
             alt="person"
-            className="h-3/6"
+            className="w-5/6"
           />
         </div>
       </div>

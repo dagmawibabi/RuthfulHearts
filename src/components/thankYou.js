@@ -24,7 +24,7 @@ export default function ThankYou() {
   }
   getVisitorCount();
   return (
-    <div className="h-fit text-center pb-28">
+    <div className="h-fit text-center pb-28" id="thanks">
       <div className="flex justify-center">
         <img src={peep} alt="thank you" className="w-[25%] items-center " />
       </div>
