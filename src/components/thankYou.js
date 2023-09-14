@@ -24,15 +24,32 @@ export default function ThankYou() {
   }
   getVisitorCount();
   return (
-    <div className="h-fit text-center pb-28" id="thanks">
+    <div id="thanks" className="h-screen pt-36 text-center
+      sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0 
+      sm:h-fit md:h-fit lg:h-fit xl:h-fit 2xl:h-fit 
+      sm:pb-20 md:pb-20 lg:pb-20 xl:pb-20 2xl:pb-20 
+      
+    ">
       <div className="flex justify-center">
-        <img src={peep} alt="thank you" className="w-[25%] items-center " />
+        <img src={peep} alt="thank you" className="w-[90%] items-center
+          sm:w-[25%] md:w-[25%] lg:w-[25%] xl:w-[25%] 2xl:w-[25%] 
+        " />
       </div>
-      <div className="mb-5 font-bold text-2xl text-cyan-400 ">
+
+      {/* Visitor Count */}
+      <div className="pb-5 font-bold text-lg text-cyan-400
+        sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl 
+      ">
         <span className="text-pink-500 "> {visitorCount} </span> Ruthful Hearts
         have been here!
       </div>
-      <span className="font-bold text-5xl "> Thank You So Much! </span>
+
+      {/* Thank You */}
+      <span className="font-bold text-2xl
+        sm:text-5xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-5xl 
+      "> 
+        Thank You So Much! 
+      </span>
     </div>
   );
 }
