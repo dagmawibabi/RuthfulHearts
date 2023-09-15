@@ -39,13 +39,10 @@ export default function Header() {
   // useEffect(() => {changeHeaderImage()}, [])
 
   return (
-    <div className=" h-[90%]" id="home">
+    <div className="h-[90%] w-screen" id="home">
       {/* Header Image */}
       <div className="visible h-fit pl-16
-        md:hidden
-        lg:hidden
-        xl:hidden
-        2xl:hidden
+         lg:hidden xl:hidden 2xl:hidden
       ">
           <img
             src={headerImages[currentHeaderImageIndex]}
@@ -55,48 +52,45 @@ export default function Header() {
         </div>
 
       <div className="relative flex
-        md:pl-56 lg:pl-56 xl:pl-56 2xl:pl-56
+          lg:pl-20 xl:pl-56 2xl:pl-56
       ">
         {/* Header Text */}
-        <div className="w-full h-fit pt-0
-          sm:w-2/5
-          md:pt-56
-          lg:pt-56 
-          xl:pt-56 
-          2xl:pt-56
+        <div className=" h-fit pt-0 
+           lg:pt-44 xl:pt-56 2xl:pt-56
+           lg:w-2/5 xl:w-2/5 2xl:w-2/5
         ">
           <div className="text-3xl leading-snug pb-1 font-bold text-center
-           md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl
-           md:text-left lg:text-left xl:text-left 2xl:text-left
-           md:leading-snug lg:leading-snug xl:leading-snug 2xl:leading-snug
+             lg:text-4xl xl:text-6xl 2xl:text-6xl
+             lg:text-left xl:text-left 2xl:text-left
+             lg:leading-snug xl:leading-snug 2xl:leading-snug
            
            ">
             <p>
               Changing{" "}
               <span className="text-pink-500 text-3xl hover:text-cyan-400 duration-300
-               sm:text-7xl md:text-7xl lg:text-7xl xl:text-7xl 2xl:text-7xl
+                 lg:text-4xl xl:text-7xl 2xl:text-7xl
               ">
                 1*
               </span>{" "}
-              Person's <br /> Life One at a Time
+              Person's <br className="sm:hidden" /> Life One at a Time
             </p>
           </div>
           <div className="text-center
-            md:text-left lg:text-left xl:text-left 2xl:text-left           
+              lg:text-left xl:text-left 2xl:text-left           
           ">
             <span className="text-pink-500 font-bold text-xl
-              md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl 
+                lg:text-2xl xl:text-3xl 2xl:text-3xl 
             "> * </span>
             <span className="text-cyan-400 font-bold text-lg
-              md:text-xl lg:text-xl xl:text-xl 2xl:text-xl 
+                lg:text-lg xl:text-xl 2xl:text-xl 
             ">
               = more with your help
             </span>
           </div>
           <div className="text-base leading-snug pt-5 w-11/12 text-center pl-5
-            md:pl-0 lg:pl-0 xl:pl-0 2xl:pl-0 
-            md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl 
-            md:text-left lg:text-left xl:text-left 2xl:text-left 
+              lg:pl-0 xl:pl-0 2xl:pl-0 
+              lg:text-xl xl:text-2xl 2xl:text-2xl 
+              lg:text-left xl:text-left 2xl:text-left 
           ">
             Ruthful Hearts is aiming to change people's lives one person at a
             time. Using anonymous donations we make meaningful changes on the
@@ -104,17 +98,20 @@ export default function Header() {
           </div>
 
           {/* CTA */}
-          <div className="pt-12 cursor-pointer gap-5 px-5
-            md:flex lg:flex xl:flex 2xl:flex 
+          <div className="pt-12 cursor-pointer gap-2 w-screen px-8
+              lg:flex xl:flex 2xl:flex 
+              lg:gap-2 xl:gap-2 2xl:gap-2               
+              lg:px-0 xl:px-0 2xl:px-0 
+
           ">
             <a href="#donate" rel="noreferrer">
-              <div className="bg-gray-700 w-full rounded-full
-                  md:w-72 lg:w-72 xl:w-72 2xl:w-72 
+              <div className="bg-gray-700 w-full h-12 rounded-full
+                    lg:w-60 xl:w-72 2xl:w-72 
               ">
                 <div className="bg-cyan-500 w-full px-8 py-2 -m-1 rounded-full font-bold text-black text-lg hover:bg-emerald-500 duration-200 text-center
-                  md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl 
-                  md:w-72 lg:w-72 xl:w-72 2xl:w-72 
-
+                    lg:text-xl xl:text-2xl 2xl:text-2xl 
+                    lg:w-60 xl:w-72 2xl:w-72 
+                    lg:px-0 xl:px-8 2xl:px-8 
                 ">
                   Donate Right Now!
                 </div>
@@ -125,12 +122,12 @@ export default function Header() {
             </div>
             <a href="#about" rel="noreferrer">
               <div className="bg-gray-700 w-full h-12 rounded-full text-center
-                  md:w-56 lg:w-56 xl:w-56 2xl:w-56 
+                    lg:w-56 xl:w-56 2xl:w-56 
 
               ">
-                <div className="bg-slate-100 px-6 py-2 w-full h-full -m-1 rounded-full font-bold text-black text-lg hover:bg-pink-500 duration-200
-                  md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl 
-                  md:px-6 lg:px-6 xl:px-6 2xl:px-6 
+                <div className="bg-slate-100 px-5 py-2 w-full -m-1 rounded-full font-bold text-black text-lg hover:bg-pink-500 duration-200
+                    lg:text-xl xl:text-2xl 2xl:text-2xl 
+                    lg:px-6 xl:px-6 2xl:px-6 
 
                 ">
                   Learn More
@@ -142,7 +139,7 @@ export default function Header() {
 
         {/* Header Image */}
         <div className="invisible h-fit -scale-x-100 
-          md:visible
+          
           lg:visible
           xl:visible
           2xl:visible
