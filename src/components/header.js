@@ -41,7 +41,7 @@ export default function Header() {
   return (
     <div className="w-screen h-[90%]" id="home">
       {/* Header Image */}
-      <div className="visible h-fit  
+      <div className="visible h-fit pl-16
         md:hidden
         lg:hidden
         xl:hidden
@@ -50,11 +50,11 @@ export default function Header() {
           <img
             src={headerImages[currentHeaderImageIndex]}
             alt="person"
-            className="w-4/5 pl-10"
+            className="w-4/5"
           />
         </div>
 
-      <div className="relative pl-2 flex
+      <div className="relative flex
         sm:pl-56
         md:pl-56
         lg:pl-56 
@@ -62,20 +62,22 @@ export default function Header() {
         2xl:pl-56
       ">
         {/* Header Text */}
-        <div className="w-full h-fit pt-0 
+        <div className="w-full h-fit pt-0
           sm:pt-56 sm:w-2/5
           md:pt-56
           lg:pt-56 
           xl:pt-56 
           2xl:pt-56
         ">
-          <div className="text-2xl leading-tight pb-1 font-bold text-center
+          <div className="text-3xl leading-snug pb-1 font-bold text-center
            sm:text-6xl md:text-6xl lg:text-6xl xl:text-6xl 2xl:text-6xl
            sm:text-left md:text-left lg:text-left xl:text-left 2xl:text-left
+           sm:leading-snug md:leading-snug lg:leading-snug xl:leading-snug 2xl:leading-snug
+           
            ">
             <p>
               Changing{" "}
-              <span className="text-pink-500 text-2xl hover:text-cyan-400 duration-300
+              <span className="text-pink-500 text-3xl hover:text-cyan-400 duration-300
                sm:text-7xl
                md:text-7xl
                lg:text-7xl 
@@ -84,7 +86,7 @@ export default function Header() {
               ">
                 1*
               </span>{" "}
-              Person's <br /> Life one at a time
+              Person's <br /> Life One at a Time
             </p>
           </div>
           <div className="text-center
@@ -99,9 +101,9 @@ export default function Header() {
               = more with your help
             </span>
           </div>
-          <div className="text-lg leading-snug pt-5 w-11/12 text-center pl-5
-            sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl 
+          <div className="text-base leading-snug pt-5 w-11/12 text-center pl-5
             sm:pl-0 md:pl-0 lg:pl-0 xl:pl-0 2xl:pl-0 
+            sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-2xl 
             sm:text-left md:text-left lg:text-left xl:text-left 2xl:text-left 
           ">
             Ruthful Hearts is aiming to change people's lives one person at a
