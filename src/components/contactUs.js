@@ -3,7 +3,7 @@ import instagram from "../images/icons/instagram.svg";
 
 export default function ContactUs() {
   return (
-    <div id="contact" className="w-screen h-fit text-center pt-52
+    <div id="contact" className=" h-fit text-center pt-52
       sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen
     ">
       <div className="text-2xl font-bold
