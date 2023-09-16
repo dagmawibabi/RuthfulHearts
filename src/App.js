@@ -9,7 +9,7 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="bg-[#151515] h-fit text-white">
+    <div className="bg-[#151515] h-fit text-white w-fit overflow-hidden">
       <Loglib
         config={{
           id: "ruthfulhearts_vercel",

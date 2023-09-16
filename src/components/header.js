@@ -113,7 +113,7 @@ export default function Header() {
                     lg:w-60 xl:w-72 2xl:w-72 
                     lg:px-0 xl:px-8 2xl:px-8 
                 ">
-                  Donate Right Now!
+                  Donate Right Now
                 </div>
               </div>
             </a>
@@ -128,7 +128,6 @@ export default function Header() {
                 <div className="bg-slate-100 px-5 py-2 w-full -m-1 rounded-full font-bold text-black text-lg hover:bg-pink-500 duration-200
                     lg:text-xl xl:text-2xl 2xl:text-2xl 
                     lg:px-6 xl:px-6 2xl:px-6 
-
                 ">
                   Learn More
                 </div>
@@ -138,16 +137,16 @@ export default function Header() {
         </div>
 
         {/* Header Image */}
-        <div className="invisible h-fit -scale-x-100 
-          
-          lg:visible
-          xl:visible
-          2xl:visible
+        <div className="w-[70%] invisible h-fit -scale-x-100 
+          lg:visible xl:visible 2xl:visible
+          min-[590px]:w-[50%]
+          md:w-[40%] lg:w-[45%] xl:w-[40%] 2xl:w-[40%]
         ">
           <img
             src={headerImages[currentHeaderImageIndex]}
             alt="person"
             className="w-5/6"
+
           />
         </div>
       </div>
