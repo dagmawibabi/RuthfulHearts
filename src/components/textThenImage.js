@@ -6,7 +6,7 @@ export default function TextThenImage({image, header, details}) {
              lg:px-60 xl:px-60 2xl:px-60
              lg:h-screen xl:h-screen 2xl:h-screen
         ">
-            <div className="w-full h-fit relative -scale-x-100 visible
+            <div className="w-[70%] mx-auto h-fit relative -scale-x-100 visible
                  lg:hidden xl:hidden 2xl:hidden
             ">
                 <img alt="img1" src={image} />
@@ -23,7 +23,7 @@ export default function TextThenImage({image, header, details}) {
                      lg:text-6xl xl:text-6xl 2xl:text-6xl
                 "> {header} </span>
 
-                <p className="pt-5 text-lg
+                <p className="pt-5 text-base
                      lg:pt-8 xl:pt-8 2xl:pt-8
                      lg:text-2xl xl:text-2xl 2xl:text-2xl
                 ">

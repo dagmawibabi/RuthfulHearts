@@ -4,8 +4,9 @@ export default function ImageThenText({image, header, details}) {
               lg:flex xl:flex 2xl:flex
               lg:px-60 xl:px-60 2xl:px-60
         ">
-            <div className="w-full h-fit relative
-                  lg:w-[40%] xl:w-[40%] 2xl:w-[40%]
+            <div className="w-[70%] h-fit relative mx-auto 
+                  min-[590px]:w-[10%]
+                  md:w-[40%] lg:w-[40%] xl:w-[40%] 2xl:w-[40%]
             ">
                 <img alt="img1" src={image} />
             </div>
@@ -18,7 +19,7 @@ export default function ImageThenText({image, header, details}) {
                 <span className="text-2xl font-bold
                       lg:text-6xl xl:text-6xl 2xl:text-6xl
                 "> {header} </span>
-                <p className="pt-5 text-lg
+                <p className="pt-5 text-base
                       lg:pt-8 xl:pt-8 2xl:pt-8
                       lg:text-2xl xl:text-2xl 2xl:text-2xl
                 ">
