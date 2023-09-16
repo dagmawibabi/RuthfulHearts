@@ -3,6 +3,7 @@ import telegram from "../images/icons/telegram.svg";
 import chapa from "../images/icons/chapa.png";
 
 export default function Donations() {
+  let telegramChannelLink = "https://t.me/ruthfulhearts";
   return (
     <div className="w-screen h-fit text-center pt-36" id="donate">
       <div className="text-3xl font-bold
@@ -26,9 +27,8 @@ export default function Donations() {
               sm:px-10 md:px-10 lg:px-10 xl:px-10 2xl:px-10 
               sm:py-2 md:py-2 lg:py-2 xl:py-2 2xl:py-2 
               sm:pr-0 md:pr-0 lg:pr-0 xl:pr-0 2xl:pr-0 
-
-            ">
-              <div className="rounded-full py-1 bg-cyan-500 flex gap-3 items-center pr-0 pl-2 justify-start duration-300
+            " onClick={(e) => {window.open(telegramChannelLink, '_blank').focus();}}>
+              <div className="rounded-full py-1 bg-cyan-500 flex gap-3 items-center pr-0 pl-2 justify-start duration-300 animate-pulse hover:animate-none
                 sm:justify-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center 
                 sm:pl-0 md:pl-0 lg:pl-0 xl:pl-0 2xl:pl-0 
                 lg:hover:bg-emerald-500 xl:hover:bg-emerald-500 2xl:hover:bg-emerald-500 
@@ -39,7 +39,7 @@ export default function Donations() {
                   sm:pr-5 md:pr-5 lg:pr-5 xl:pr-5 2xl:pr-5 
                   sm:py-2 md:py-2 lg:py-2 xl:py-2 2xl:py-2 
                 ">
-                  Goto our Telegram Channel
+                  Goto Our Telegram Channel
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function Donations() {
             <div className="w-full px-0 pr-3
               sm:px-10 md:px-10 lg:px-10 xl:px-10 2xl:px-10 
               sm:pr-0 md:pr-0 lg:pr-0 xl:pr-0 2xl:pr-0 
-            ">
+            " onClick={(e) => {window.open(telegramChannelLink, '_blank').focus();}}>
               <div className="border border-dashed text-start py-2 px-5 font-bold text-sm border-pink-500 text-pink-500 rounded-full duration-300
                   sm:py-4 md:py-4 lg:py-4 xl:py-4 2xl:py-4 
                   sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl 

@@ -2,6 +2,9 @@ import telegram from "../images/icons/telegram.svg";
 import instagram from "../images/icons/instagram.svg";
 
 export default function ContactUs() {
+  let telegramChannelLink = "https://t.me/ruthfulhearts";
+  let instagramChannelLink = "https://instagram.com/ruthfulhearts";
+
   return (
     <div id="contact" className=" h-fit w-screen text-center pt-52
         lg:h-screen xl:h-screen 2xl:h-screen
@@ -18,40 +21,44 @@ export default function ContactUs() {
       ">
 
         {/* Instagram */}
-        <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-pink-500 [&>*:first-child]:hover:border-cyan-500">
-          <div className="rounded-3xl p-0 border-4 pl-[1px]
-            bg-pink-500 
-            lg:bg-white xl:bg-white 2xl:bg-white 
-            lg:p-2 xl:p-2 2xl:p-2
-          ">
-            <img src={instagram} alt="instagram" className="w-[73px] h-[73px]
-              lg:w-20 xl:w-20 2xl:w-20
-              lg:h-20 xl:h-20 2xl:h-20
-            " />
-          </div>
-          <span className="font-bold text-lg text-pink-500
-            lg:text-xl xl:text-xl 2xl:text-xl
-            lg:text-white xl:text-white 2xl:text-white
-          "> Instagram </span>
-        </div>
-
-        {/* Telegram */}
-        <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-cyan-500 [&>*:first-child]:hover:border-pink-500">
-          <div className="rounded-full p-0 border-4
-            bg-cyan-500 
-            lg:bg-white xl:bg-white 2xl:bg-white 
-            lg:p-2 xl:p-2 2xl:p-2
-          ">
-            <img src={telegram} alt="telegram" className="w-[73px] h-[73px]
+        <a href={instagramChannelLink} target="_blank">
+          <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-pink-500 [&>*:first-child]:hover:border-cyan-500">
+            <div className="rounded-3xl p-0 border-4 pl-[1px]
+              bg-pink-500 
+              lg:bg-white xl:bg-white 2xl:bg-white 
+              lg:p-2 xl:p-2 2xl:p-2
+            ">
+              <img src={instagram} alt="instagram" className="w-[73px] h-[73px]
                 lg:w-20 xl:w-20 2xl:w-20
-                lg:h-20 xl:h-20 2xl:h-20            
-            " />
-          </div>
-          <span className="font-bold text-lg text-cyan-500
+                lg:h-20 xl:h-20 2xl:h-20
+              " />
+            </div>
+            <span className="font-bold text-lg text-pink-500
               lg:text-xl xl:text-xl 2xl:text-xl
               lg:text-white xl:text-white 2xl:text-white
-          "> Telegram </span>
-        </div>
+            "> Instagram </span>
+          </div>
+        </a>
+
+        {/* Telegram */}
+        <a href={telegramChannelLink} target="_blank">
+          <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-cyan-500 [&>*:first-child]:hover:border-pink-500">
+            <div className="rounded-full p-0 border-4
+              bg-cyan-500 
+              lg:bg-white xl:bg-white 2xl:bg-white 
+              lg:p-2 xl:p-2 2xl:p-2
+            ">
+              <img src={telegram} alt="telegram" className="w-[73px] h-[73px]
+                  lg:w-20 xl:w-20 2xl:w-20
+                  lg:h-20 xl:h-20 2xl:h-20            
+              " />
+            </div>
+            <span className="font-bold text-lg text-cyan-500
+                lg:text-xl xl:text-xl 2xl:text-xl
+                lg:text-white xl:text-white 2xl:text-white
+            "> Telegram </span>
+          </div>
+        </a>
       </div>
 
       <div className="pt-16 font-bold text-xl

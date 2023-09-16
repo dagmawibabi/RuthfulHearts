@@ -11,16 +11,32 @@ export default function AboutSection() {
   return (
     <div id="about" className="h-fit w-screen">
       {/* IMAGE THEN TEXT */}
-      <ImageThenText image={image1} header={"Lorem Ipsum Dolor It"} details={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur aliquam nisl, ac imperdiet odio mattis eu. Fusce vitae justo dignissim, accumsan nisl a, pulvinar quam. Aliquam imperdiet sem vel fermentum rutrum. Suspendisse a ex velit. Quisque tincidunt auctor dignissim."} />
+      <ImageThenText 
+        image={image1} 
+        header={"Anonymous Donations"} 
+        details={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur aliquam nisl, ac imperdiet odio mattis eu. Fusce vitae justo dignissim, accumsan nisl a, pulvinar quam. Aliquam imperdiet sem vel fermentum rutrum. Suspendisse a ex velit. Quisque tincidunt auctor dignissim."} 
+      />
 
       {/* TEXT THEN IMAGE */}
-      <TextThenImage image={image2} header={"Lorem Ipsum Dolor It"} details={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur aliquam nisl, ac imperdiet odio mattis eu. Fusce vitae justo dignissim, accumsan nisl a, pulvinar quam. Aliquam imperdiet sem vel fermentum rutrum. Suspendisse a ex velit. Quisque tincidunt auctor dignissim."} />      
+      <TextThenImage 
+        image={image2} 
+        header={"For All Kinds of People"} 
+        details={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur aliquam nisl, ac imperdiet odio mattis eu. Fusce vitae justo dignissim, accumsan nisl a, pulvinar quam. Aliquam imperdiet sem vel fermentum rutrum. Suspendisse a ex velit. Quisque tincidunt auctor dignissim."} 
+      />      
 
       {/* IMAGE THEN TEXT */}
-      <ImageThenText image={image3} header={"Lorem Ipsum Dolor It"} details={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur aliquam nisl, ac imperdiet odio mattis eu. Fusce vitae justo dignissim, accumsan nisl a, pulvinar quam. Aliquam imperdiet sem vel fermentum rutrum. Suspendisse a ex velit. Quisque tincidunt auctor dignissim."} />
+      <ImageThenText 
+        image={image3} 
+        header={"One at a Time"} 
+        details={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur aliquam nisl, ac imperdiet odio mattis eu. Fusce vitae justo dignissim, accumsan nisl a, pulvinar quam. Aliquam imperdiet sem vel fermentum rutrum. Suspendisse a ex velit. Quisque tincidunt auctor dignissim."} 
+      />
       
       {/* TEXT THEN IMAGE */}
-      <TextThenImage image={image4} header={"Lorem Ipsum Dolor It"} details={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur aliquam nisl, ac imperdiet odio mattis eu. Fusce vitae justo dignissim, accumsan nisl a, pulvinar quam. Aliquam imperdiet sem vel fermentum rutrum. Suspendisse a ex velit. Quisque tincidunt auctor dignissim."} />
+      <TextThenImage 
+        image={image4} 
+        header={"Private and Graceful"} 
+        details={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur aliquam nisl, ac imperdiet odio mattis eu. Fusce vitae justo dignissim, accumsan nisl a, pulvinar quam. Aliquam imperdiet sem vel fermentum rutrum. Suspendisse a ex velit. Quisque tincidunt auctor dignissim."} 
+      />
       
     </div>
   );
