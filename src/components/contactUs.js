@@ -21,8 +21,8 @@ export default function ContactUs() {
         <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-pink-500 [&>*:first-child]:hover:border-cyan-500">
           <div className="rounded-3xl p-0 border-4 pl-[1px]
             bg-pink-500 
-                lg:bg-white  xl:bg-white  2xl:bg-white 
-              lg:p-2 xl:p-2 2xl:p-2
+            lg:bg-white xl:bg-white 2xl:bg-white 
+            lg:p-2 xl:p-2 2xl:p-2
           ">
             <img src={instagram} alt="instagram" className="w-[73px] h-[73px]
               lg:w-20 xl:w-20 2xl:w-20
@@ -30,8 +30,8 @@ export default function ContactUs() {
             " />
           </div>
           <span className="font-bold text-lg text-pink-500
-              lg:text-xl xl:text-xl 2xl:text-xl
-              lg:text-white xl:text-white 2xl:text-white
+            lg:text-xl xl:text-xl 2xl:text-xl
+            lg:text-white xl:text-white 2xl:text-white
           "> Instagram </span>
         </div>
 
@@ -39,8 +39,8 @@ export default function ContactUs() {
         <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-cyan-500 [&>*:first-child]:hover:border-pink-500">
           <div className="rounded-full p-0 border-4
             bg-cyan-500 
-                lg:bg-white  xl:bg-white  2xl:bg-white 
-              lg:p-2 xl:p-2 2xl:p-2
+            lg:bg-white xl:bg-white 2xl:bg-white 
+            lg:p-2 xl:p-2 2xl:p-2
           ">
             <img src={telegram} alt="telegram" className="w-[73px] h-[73px]
                 lg:w-20 xl:w-20 2xl:w-20

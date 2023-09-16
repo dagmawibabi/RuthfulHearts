@@ -28,10 +28,10 @@ export default function Donations() {
               sm:pr-0 md:pr-0 lg:pr-0 xl:pr-0 2xl:pr-0 
 
             ">
-              <div className="rounded-full py-1 bg-cyan-500 flex gap-3 items-center pr-0 pl-2 justify-start hover:bg-emerald-500 duration-300
+              <div className="rounded-full py-1 bg-cyan-500 flex gap-3 items-center pr-0 pl-2 justify-start duration-300
                 sm:justify-center md:justify-center lg:justify-center xl:justify-center 2xl:justify-center 
                 sm:pl-0 md:pl-0 lg:pl-0 xl:pl-0 2xl:pl-0 
-
+                lg:hover:bg-emerald-500 xl:hover:bg-emerald-500 2xl:hover:bg-emerald-500 
               ">
                 <img src={telegram} alt="telegram" className="w-10" />
                 <div className="font-bold text-black text-base
@@ -97,10 +97,12 @@ export default function Donations() {
               sm:px-10 md:px-10 lg:px-10 xl:px-10 2xl:px-10 
               sm:pr-0 md:pr-0 lg:pr-0 xl:pr-0 2xl:pr-0 
             ">
-              <div className="border border-dashed text-start py-2 px-5 font-bold text-sm border-pink-500 text-pink-500 rounded-full hover:text-cyan-500 hover:border-cyan-500 duration-300
+              <div className="border border-dashed text-start py-2 px-5 font-bold text-sm border-pink-500 text-pink-500 rounded-full duration-300
                   sm:py-4 md:py-4 lg:py-4 xl:py-4 2xl:py-4 
                   sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl 
                   sm:text-center md:text-center lg:text-center xl:text-center 2xl:text-center 
+                  lg:hover:text-cyan-500 xl:hover:text-cyan-500 2xl:hover:text-cyan-500
+                  lg:hover:border-cyan-500 xl:hover:border-cyan-500 2xl:hover:border-cyan-500
               ">
                 Join the Channel and See the wonders the Donations Do
               </div>

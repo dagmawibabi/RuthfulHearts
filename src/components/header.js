@@ -67,8 +67,9 @@ export default function Header() {
            ">
             <p>
               Changing{" "}
-              <span className="text-pink-500 text-3xl hover:text-cyan-400 duration-300
+              <span className="text-pink-500 text-3xl duration-300
                  lg:text-4xl xl:text-4xl 2xl:text-7xl
+                 lg:hover:text-cyan-400 xl:hover:text-cyan-400 2xl:hover:text-cyan-400 
               ">
                 1*
               </span>{" "}
@@ -108,10 +109,11 @@ export default function Header() {
               <div className="bg-gray-700 w-full h-12 rounded-full
                     lg:w-60 xl:w-60 2xl:w-72 
               ">
-                <div className="bg-cyan-500 w-full px-8 py-2 -m-1 rounded-full font-bold text-black text-lg hover:bg-emerald-500 duration-200 text-center
+                <div className="bg-cyan-500 w-full px-8 py-2 -m-1 rounded-full font-bold text-black text-lg duration-200 text-center
                     lg:text-xl xl:text-xl 2xl:text-2xl 
                     lg:w-60 xl:w-60 2xl:w-72 
                     lg:px-0 xl:px-0 2xl:px-8 
+                    lg:hover:bg-emerald-500 xl:hover:bg-emerald-500 2xl:hover:bg-emerald-500 
                 ">
                   Donate Right Now
                 </div>
@@ -125,9 +127,10 @@ export default function Header() {
                     lg:w-56 xl:w-56 2xl:w-56 
 
               ">
-                <div className="bg-slate-100 px-5 py-2 w-full -m-1 rounded-full font-bold text-black text-lg hover:bg-pink-500 duration-200
+                <div className="bg-slate-100 px-5 py-2 w-full -m-1 rounded-full font-bold text-black text-lg duration-200
                     lg:text-xl xl:text-xl 2xl:text-2xl 
                     lg:px-6 xl:px-6 2xl:px-6 
+                    lg:hover:bg-pink-500 xl:hover:bg-pink-500 2xl:hover:bg-pink-500 
                 ">
                   Learn More
                 </div>
