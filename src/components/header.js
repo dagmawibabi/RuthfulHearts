@@ -52,15 +52,15 @@ export default function Header() {
         </div>
 
       <div className="relative flex
-          lg:pl-20 xl:pl-56 2xl:pl-56
+          lg:pl-20 xl:pl-20 2xl:pl-56
       ">
         {/* Header Text */}
         <div className=" h-fit pt-0 
-           lg:pt-44 xl:pt-56 2xl:pt-56
+           lg:pt-44 xl:pt-44 2xl:pt-56
            lg:w-2/5 xl:w-2/5 2xl:w-2/5
         ">
           <div className="text-3xl leading-snug pb-1 font-bold text-center
-             lg:text-4xl xl:text-6xl 2xl:text-6xl
+             lg:text-4xl xl:text-4xl 2xl:text-6xl
              lg:text-left xl:text-left 2xl:text-left
              lg:leading-snug xl:leading-snug 2xl:leading-snug
            
@@ -68,7 +68,7 @@ export default function Header() {
             <p>
               Changing{" "}
               <span className="text-pink-500 text-3xl hover:text-cyan-400 duration-300
-                 lg:text-4xl xl:text-7xl 2xl:text-7xl
+                 lg:text-4xl xl:text-4xl 2xl:text-7xl
               ">
                 1*
               </span>{" "}
@@ -89,7 +89,7 @@ export default function Header() {
           </div>
           <div className="text-base leading-snug pt-5 w-11/12 text-center pl-5
               lg:pl-0 xl:pl-0 2xl:pl-0 
-              lg:text-xl xl:text-2xl 2xl:text-2xl 
+              lg:text-xl xl:text-xl 2xl:text-2xl 
               lg:text-left xl:text-left 2xl:text-left 
           ">
             Ruthful Hearts is aiming to change people's lives one person at a
@@ -106,12 +106,12 @@ export default function Header() {
           ">
             <a href="#donate" rel="noreferrer">
               <div className="bg-gray-700 w-full h-12 rounded-full
-                    lg:w-60 xl:w-72 2xl:w-72 
+                    lg:w-60 xl:w-60 2xl:w-72 
               ">
                 <div className="bg-cyan-500 w-full px-8 py-2 -m-1 rounded-full font-bold text-black text-lg hover:bg-emerald-500 duration-200 text-center
-                    lg:text-xl xl:text-2xl 2xl:text-2xl 
-                    lg:w-60 xl:w-72 2xl:w-72 
-                    lg:px-0 xl:px-8 2xl:px-8 
+                    lg:text-xl xl:text-xl 2xl:text-2xl 
+                    lg:w-60 xl:w-60 2xl:w-72 
+                    lg:px-0 xl:px-0 2xl:px-8 
                 ">
                   Donate Right Now
                 </div>
@@ -126,7 +126,7 @@ export default function Header() {
 
               ">
                 <div className="bg-slate-100 px-5 py-2 w-full -m-1 rounded-full font-bold text-black text-lg hover:bg-pink-500 duration-200
-                    lg:text-xl xl:text-2xl 2xl:text-2xl 
+                    lg:text-xl xl:text-xl 2xl:text-2xl 
                     lg:px-6 xl:px-6 2xl:px-6 
                 ">
                   Learn More
@@ -140,7 +140,7 @@ export default function Header() {
         <div className="w-[70%] invisible h-fit -scale-x-100 
           lg:visible xl:visible 2xl:visible
           min-[590px]:w-[50%]
-          md:w-[40%] lg:w-[45%] xl:w-[40%] 2xl:w-[40%]
+          md:w-[40%] lg:w-[45%] xl:w-[45%] 2xl:w-[40%]
         ">
           <img
             src={headerImages[currentHeaderImageIndex]}
