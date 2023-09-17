@@ -1,10 +1,12 @@
 import headerImage from "../images/illustrations/Bust/peep-11.png";
-import headerImage1 from "../images/illustrations/Bust/peep-5.png";
+
+import headerImage1 from "../images/illustrations/Bust/peep-87.png";
+import headerImage3 from "../images/illustrations/Bust/peep-79.png";
+import headerImage5 from "../images/illustrations/Bust/peep-12.png";
+import headerImage6 from "../images/illustrations/Bust/peep-102.png";
+
 import headerImage2 from "../images/illustrations/Bust/peep-6.png";
-import headerImage3 from "../images/illustrations/Bust/peep-7.png";
 import headerImage4 from "../images/illustrations/Bust/peep-8.png";
-import headerImage5 from "../images/illustrations/Bust/peep-9.png";
-import headerImage6 from "../images/illustrations/Bust/peep-10.png";
 import headerImage7 from "../images/illustrations/Bust/peep-100.png";
 // eslint-disable-next-line
 import { useEffect, useState } from "react";
@@ -14,12 +16,20 @@ export default function Header() {
   const [currentHeaderImageIndex, setcurrentHeaderImageIndex] = useState(0);
   let headerImages = [
     headerImage,
+    headerImage,
+    headerImage1,
     headerImage1,
     headerImage2,
+    headerImage2,
+    headerImage3,
     headerImage3,
     headerImage4,
+    headerImage4,
+    headerImage5,
     headerImage5,
     headerImage6,
+    headerImage6,
+    headerImage7,
     headerImage7,
   ];
 
@@ -33,7 +43,7 @@ export default function Header() {
       }
       console.log(headerImgIndex);
       setcurrentHeaderImageIndex(headerImgIndex);
-    }, 5000);
+    }, 10000);
   }
 
   // useEffect(() => {changeHeaderImage()}, [])
