@@ -60,7 +60,6 @@ export default function Header() {
       if (headerImgIndex > headerImages.length - 1) {
         headerImgIndex = 0;
       }
-      console.log(headerImgIndex);
       setcurrentHeaderImageIndex(headerImgIndex);
     }, 3500);
   }
