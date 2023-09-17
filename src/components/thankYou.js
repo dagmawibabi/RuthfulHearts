@@ -17,7 +17,7 @@ export default function ThankYou() {
     const formattedDate = `${year}-${month}-${day}`;
     let visitorCountResult = await axios({
       method: "get",
-      url: `https://api.loglib.io/v1/insight?apiKey=site_c245xfs2th&startDate=2023-09-11&endDate=${formattedDate}&timeZone=Africa/Addis_Ababa`,
+      url: `https://api.loglib.io/v1/insight?apiKey=site_8h2xkvnhlf&startDate=2023-09-11&endDate=${formattedDate}&timeZone=Africa/Addis_Ababa`,
       withCredentials: false,
     });
     setVisitorCount(visitorCountResult.data.insight.totalPageViews.current);

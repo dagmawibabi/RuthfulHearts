@@ -21,7 +21,7 @@ export default function ContactUs() {
       ">
 
         {/* Instagram */}
-        <a href={instagramChannelLink} target="_blank">
+        <a href={instagramChannelLink} target="_blank" rel="noreferrer">
           <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-pink-500 [&>*:first-child]:hover:border-cyan-500">
             <div className="rounded-3xl p-0 border-4 pl-[1px]
               bg-pink-500 
@@ -41,7 +41,7 @@ export default function ContactUs() {
         </a>
 
         {/* Telegram */}
-        <a href={telegramChannelLink} target="_blank">
+        <a href={telegramChannelLink} target="_blank" rel="noreferrer">
           <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-cyan-500 [&>*:first-child]:hover:border-pink-500">
             <div className="rounded-full p-0 border-4
               bg-cyan-500 
