@@ -71,14 +71,16 @@ export default function Donations() {
               sm:px-10 md:px-10 lg:px-10 xl:px-10 2xl:px-10 
               sm:pr-0 md:pr-0 lg:pr-0 xl:pr-0 2xl:pr-0 
             ">
-              <div className="py-2 pl-3 pr-3 rounded-tl-full rounded-bl-full font-bold text-black border border-dashed border-emerald-500">
+              <div className="py-3 pl-4 pr-3 rounded-tl-full rounded-bl-full font-bold text-black border border-dashed border-emerald-500">
                 <img src={chapa} alt="chapa" className="w-[70px]
-                  sm:w-14 md:w-14 lg:w-14 xl:w-14 2xl:w-14 
+                lg:w-[60px] xl:w-[60px] 2xl:w-[70px]
+                lg:py-0 xl:py-0 2xl:py-0
+                lg:pl-1 xl:pl-1 2xl:pl-1 
+                " />
+                  {/* sm:w-14 md:w-14 lg:w-14 xl:w-14 2xl:w-14 
                   sm:pl-6 md:pl-6 lg:pl-6 xl:pl-6 2xl:pl-6 
                   sm:pr-5 md:pr-5 lg:pr-5 xl:pr-5 2xl:pr-5 
-                  sm:py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-3 
-
-                " />
+                  sm:py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-3  */}
               </div>
               <div className="py-2 w-full px-5 rounded-tr-full rounded-br-full font-bold text-black bg-emerald-500 text-sm text-left
                   sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl 
