@@ -1,14 +1,24 @@
 import headerImage from "../images/illustrations/Bust/peep-11.png";
+import headerImage1 from "../images/illustrations/Bust/peep-79.png"; 
 
-import headerImage1 from "../images/illustrations/Bust/peep-87.png";
-import headerImage3 from "../images/illustrations/Bust/peep-79.png";
-import headerImage5 from "../images/illustrations/Bust/peep-12.png";
-import headerImage6 from "../images/illustrations/Bust/peep-102.png";
+import headerImage2 from "../images/illustrations/Bust/peep-12.png";
+import headerImage3 from "../images/illustrations/Bust/peep-23.png";
 
-import headerImage2 from "../images/illustrations/Bust/peep-6.png";
-import headerImage4 from "../images/illustrations/Bust/peep-8.png";
-import headerImage7 from "../images/illustrations/Bust/peep-100.png";
-// eslint-disable-next-line
+import headerImage4 from "../images/illustrations/Bust/peep-35.png";
+import headerImage5 from "../images/illustrations/Bust/peep-27.png";
+
+import headerImage6 from "../images/illustrations/Bust/peep-61.png";
+import headerImage7 from "../images/illustrations/Bust/peep-76.png";
+
+
+import headerImage8 from "../images/illustrations/Bust/peep-67.png";
+import headerImage9 from "../images/illustrations/Bust/peep-51.png";
+
+import headerImage10 from "../images/illustrations/Bust/peep-96.png"; 
+import headerImage11 from "../images/illustrations/Bust/peep-99.png"; 
+
+import headerImage12 from "../images/illustrations/Bust/peep-102.png"; 
+
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -31,22 +41,31 @@ export default function Header() {
     headerImage6,
     headerImage7,
     headerImage7,
+    headerImage8,
+    headerImage8,
+    headerImage9,
+    headerImage9,
+    headerImage10,
+    headerImage10,
+    headerImage11,
+    headerImage11,
+    headerImage12,
+    headerImage12,
   ];
 
   // eslint-disable-next-line
   function changeHeaderImage() {
     setInterval(() => {
-      // method to be executed;
       headerImgIndex++;
       if (headerImgIndex > headerImages.length - 1) {
         headerImgIndex = 0;
       }
       console.log(headerImgIndex);
       setcurrentHeaderImageIndex(headerImgIndex);
-    }, 10000);
+    }, 3500);
   }
 
-  // useEffect(() => {changeHeaderImage()}, [])
+  useEffect(() => {changeHeaderImage()}, [])
 
   return (
     <div className="h-[90%] w-screen" id="home">
