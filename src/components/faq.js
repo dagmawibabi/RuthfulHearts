@@ -30,7 +30,7 @@ export default function FAQ() {
     ];
     return (
         <div className="w-screen h-fit text-center pt-36 flex flex-col justify-center items-center">
-            <div className="text-lg font-bold
+            <div className="text-2xl font-bold
                 lg:text-5xl xl:text-5xl 2xl:text-5xl
             ">
                 Frequently Asked Questions
