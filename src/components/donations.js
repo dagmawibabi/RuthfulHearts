@@ -82,7 +82,7 @@ export default function Donations() {
                   sm:pr-5 md:pr-5 lg:pr-5 xl:pr-5 2xl:pr-5 
                   sm:py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-3  */}
               </div>
-              <div className="py-2 w-full px-5 rounded-tr-full rounded-br-full font-bold text-black bg-emerald-500 text-sm text-left
+              <div className="py-2 w-full px-5 rounded-tr-full rounded-br-full font-bold text-black bg-emerald-500 text-sm text-left items-center flex
                   sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl 
                   sm:text-center md:text-center lg:text-center xl:text-center 2xl:text-center 
                   sm:py-3 md:py-3 lg:py-3 xl:py-3 2xl:py-3 
@@ -139,7 +139,6 @@ export default function Donations() {
       <p className="text-sm font-bold px-10 leading-normal
         sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl 
         sm:px-0 md:px-0 lg:px-0 xl:px-0 2xl:px-0 
-
       ">
         <span className="text-pink-500">* </span> = Donations as little as 1 ETB
         mean a whole lot to us!{" "}
