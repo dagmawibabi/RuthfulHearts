@@ -1,7 +1,7 @@
 // 52 57 61 67 79 82 87 96 100 18 26 35 50 100
 import image1 from "../images/illustrations/Bust/peep-26.png";  // Anonymous Donations
 import image2 from "../images/illustrations/Bust/peep-50.png";  // For All Kinds of People 
-import image3 from "../images/illustrations/Bust/peep-72.png";  // One at a Time 
+import image3 from "../images/illustrations/Bust/peep-87.png";  // One at a Time 
 import image4 from "../images/illustrations/Bust/peep-100.png"; // Private and Graceful 
 import ImageThenText from "./imageThenText";
 import TextThenImage from "./textThenImage";
