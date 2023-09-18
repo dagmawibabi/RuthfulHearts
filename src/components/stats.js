@@ -9,7 +9,7 @@ export default function Stats() {
     async function getCash() {
         let result = await axios({
             method: "get",
-            url: "http://ruthfulhearts.com/ruthfulhearts/cash",
+            url: "https://ruthfulhearts.com/ruthfulhearts/cash",
             withCredentials: false,
         });
         setCurrentCash(result.data.cash);
