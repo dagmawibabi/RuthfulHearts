@@ -1,9 +1,21 @@
-import cash from "../public/cash.json";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export default function Stats() {
 
     // Current Cash
-    let currentCash = cash["cash"].toString() || "14610";
+    const [currentCash, setCurrentCash] = useState("14,085");
+
+    async function getCash() {
+        let result = await axios({
+            method: "get",
+            url: "http://ruthfulhearts.com/ruthfulhearts/cash",
+            withCredentials: false,
+        });
+        setCurrentCash(result.data.cash);
+    }
+
+    useEffect(() => { getCash() }, [])
 
     // DATES :(
     let date1 = new Date().toLocaleDateString();
