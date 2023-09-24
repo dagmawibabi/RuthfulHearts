@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.79fa972d.css",
+    "main.js": "/static/js/main.9522a5ba.js",
+    "static/js/787.69899b67.chunk.js": "/static/js/787.69899b67.chunk.js",
+    "static/media/peep-102.png": "/static/media/peep-102.ce45c85e6376b3e5b7e2.png",
+    "static/media/peep-50.png": "/static/media/peep-50.c954297378054136c1d0.png",
+    "static/media/peep-96.png": "/static/media/peep-96.a78daafe3a5b14e8722a.png",
+    "static/media/peep-76.png": "/static/media/peep-76.a887a812bd9a0907385f.png",
+    "static/media/peep-100.png": "/static/media/peep-100.4290462c19d6510490bf.png",
+    "static/media/peep-78.png": "/static/media/peep-78.50aa0eb400432de9b003.png",
+    "static/media/peep-79.png": "/static/media/peep-79.91d121944c7d7f597096.png",
+    "static/media/peep-51.png": "/static/media/peep-51.1588b404f15431bbebb9.png",
+    "static/media/peep-12.png": "/static/media/peep-12.b1afde5912586b492d0e.png",
+    "static/media/peep-99.png": "/static/media/peep-99.4123ee053bcd94c28d93.png",
+    "static/media/peep-27.png": "/static/media/peep-27.a62abe74f3baf44b2e83.png",
+    "static/media/peep-35.png": "/static/media/peep-35.7f11de197463a841223f.png",
+    "static/media/peep-67.png": "/static/media/peep-67.ee4883374b534a3335d9.png",
+    "static/media/peep-11.png": "/static/media/peep-11.a77f82cc5a6a0e346d89.png",
+    "static/media/peep-23.png": "/static/media/peep-23.67da34ee6893e386a8cc.png",
+    "static/media/peep-26.png": "/static/media/peep-26.e811dc3c69fd25576d8c.png",
+    "static/media/peep-87.png": "/static/media/peep-87.7395302b77687879ea59.png",
+    "static/media/peep-61.png": "/static/media/peep-61.25fe42f7b7c70c2ae3b9.png",
+    "static/media/chapa.png": "/static/media/chapa.10f97b7afd482a81aee0.png",
+    "static/media/logo.png": "/static/media/logo.8f5180b500fd308f6164.png",
+    "static/media/instagram.svg": "/static/media/instagram.849150f40cd137617202962a2e728c4d.svg",
+    "static/media/telegram.svg": "/static/media/telegram.adc56d27772286a101a8bd19477504db.svg",
+    "index.html": "/index.html",
+    "main.79fa972d.css.map": "/static/css/main.79fa972d.css.map",
+    "main.9522a5ba.js.map": "/static/js/main.9522a5ba.js.map",
+    "787.69899b67.chunk.js.map": "/static/js/787.69899b67.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79fa972d.css",
+    "static/js/main.9522a5ba.js"
+  ]
+}
