@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export default function Stats() {
 
     // Current Cash
-    const [currentCash, setCurrentCash] = useState("14,085");
+    const [currentCash, setCurrentCash] = useState("23,035");
 
     async function getCash() {
         let result = await axios({
@@ -18,28 +18,24 @@ export default function Stats() {
     useEffect(() => { getCash() }, [])
 
     // DATES :(
-    let date1 = new Date().toLocaleDateString();
-    let date2 = new Date('09/24/2023').toLocaleDateString();
-    let diffDays = parseInt(date2.split("/")[1]) - parseInt(date1.split("/")[1]);
+    // let date1 = new Date().toLocaleDateString();
+    // let date2 = new Date('09/24/2023').toLocaleDateString();
+    // let diffDays = parseInt(date2.split("/")[1]) - parseInt(date1.split("/")[1]);
 
-    let dateString = "9/25/2023";
-    var dateComponents = dateString.split('/');
-    var dateObject = new Date(dateComponents[2], dateComponents[0] - 1, dateComponents[1]);    
-    var epochTimestamp = dateObject.getTime() / 1000;
-    epochTimestamp = epochTimestamp.toString().padEnd(13, 0)
+    // let dateString = "9/25/2023";
+    // var dateComponents = dateString.split('/');
+    // var dateObject = new Date(dateComponents[2], dateComponents[0] - 1, dateComponents[1]);    
+    // var epochTimestamp = dateObject.getTime() / 1000;
+    // epochTimestamp = epochTimestamp.toString().padEnd(13, 0)
 
-    var current = Date.now();
-    var epochDiff = (parseInt(epochTimestamp) - current).toString().padStart(13,0);
+    // var current = Date.now();
+    // var epochDiff = (parseInt(epochTimestamp) - current).toString().padStart(13,0);
 
-    var dateObject2 = new Date(epochDiff * 1000);
-    var day = diffDays;
-    var hour = dateObject2.getHours();
-    var min = dateObject2.getMinutes();
-    var sec = dateObject2.getSeconds();
-
-    // console.log(epochTimestamp)
-    // console.log(current)
-    // console.log(epochDiff)
+    // var dateObject2 = new Date(epochDiff * 1000);
+    var day = 0; // diffDays;
+    var hour = 0; // dateObject2.getHours();
+    var min = 0; // dateObject2.getMinutes();
+    var sec = 0; // dateObject2.getSeconds();
 
     setInterval(() => {
         if(sec > 0){
@@ -117,18 +113,26 @@ export default function Stats() {
                                     sec
                                 </div>
                             </div>
-                            <div className="stat-desc text-base font-bold text-pink-500"> Donate & Share! </div>
+                            {/* <div className="stat-desc text-base font-bold text-pink-500"> Donate & Share! </div> */}
+                            <div className="stat-desc text-base font-bold text-pink-500"> Thank You! </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <p className="text-sm font-bold px-10 leading-normal pt-10
+            {/* <p className="text-sm font-bold px-10 leading-normal pt-10
                 sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl 
                 sm:px-0 md:px-0 lg:px-0 xl:px-0 2xl:px-0 
                 lg:pt-36 xl:pt-36 2xl:pt-36
             ">
                 Let's make the most of this time and help by donating any amount or sharing this to a friend or family!
+            </p> */}
+            <p className="text-sm font-bold px-10 leading-normal pt-10
+                sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl 
+                sm:px-0 md:px-0 lg:px-0 xl:px-0 2xl:px-0 
+                lg:pt-36 xl:pt-36 2xl:pt-36
+            ">
+                The first Ruthful Hearts fund raising campaign is now complete and successful! Thank you so much! 
             </p>
         </div>
     )
