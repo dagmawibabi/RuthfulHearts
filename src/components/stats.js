@@ -37,29 +37,29 @@ export default function Stats() {
     var min = 0; // dateObject2.getMinutes();
     var sec = 0; // dateObject2.getSeconds();
 
-    setInterval(() => {
-        if(sec > 0){
-            sec--;
-        } else {
-            sec = 59;
-            min--;
-            if(min <= 0) {
-                hour--;
-                sec = 59;
-                if(hour <= 0) {
-                    day--;
-                    hour = 23;
-                    min = 59;
-                    sec = 59;
-                }
-            }
-        }
-        document.getElementById('countdownDay').style.setProperty('--value', day)
-        document.getElementById('countdownHour').style.setProperty('--value', hour)
-        document.getElementById('countdownMin').style.setProperty('--value', min)
-        document.getElementById('countdownSec').style.setProperty('--value', sec)
+    // setInterval(() => {
+    //     if(sec > 0){
+    //         sec--;
+    //     } else {
+    //         sec = 59;
+    //         min--;
+    //         if(min <= 0) {
+    //             hour--;
+    //             sec = 59;
+    //             if(hour <= 0) {
+    //                 day--;
+    //                 hour = 23;
+    //                 min = 59;
+    //                 sec = 59;
+    //             }
+    //         }
+    //     }
+    //     document.getElementById('countdownDay').style.setProperty('--value', day)
+    //     document.getElementById('countdownHour').style.setProperty('--value', hour)
+    //     document.getElementById('countdownMin').style.setProperty('--value', min)
+    //     document.getElementById('countdownSec').style.setProperty('--value', sec)
 
-    }, 1000)
+    // }, 1000)
 
     return (
         <div className="w-screen h-fit text-center pt-44 pb-44">
