@@ -114,7 +114,7 @@ export default function Stats() {
                                 </div>
                             </div>
                             {/* <div className="stat-desc text-base font-bold text-pink-500"> Donate & Share! </div> */}
-                            <div className="stat-desc text-base font-bold text-pink-500"> Fund Raising is now complete! </div>
+                            <div className="stat-desc text-base font-bold text-pink-500"> Fund Raising is now Complete! </div>
                         </div>
                     </div>
                 </div>
