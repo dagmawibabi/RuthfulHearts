@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../images/logo/logo.png";
 
 export default function Navigation() {
@@ -21,12 +22,12 @@ export default function Navigation() {
         sm:text-base lg:text-base xl:text-base 2xl:text-base
         lg:hover:[&>a]:text-cyan-400 xl:hover:[&>a]:text-cyan-400 2xl:hover:[&>a]:text-cyan-400 
       ">
-        <a href="#home" rel="noreferrer">
+        <a href="/" rel="noreferrer">
           <span> Home </span>
         </a>
-        <a href="/blog">
-          <span> Blog </span>
-        </a>
+        
+        <a href="/blog" ><span>Blog</span></a>
+        
         <a href="#about" rel="noreferrer">
           <span> About </span>
         </a>
