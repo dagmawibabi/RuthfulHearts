@@ -21,7 +21,7 @@ function App() {
 
       <Navigation />
       <Header />
-      <Stats />
+      {/* <Stats /> */}
       <AboutSection />
       <Donations />
       <FAQ />
