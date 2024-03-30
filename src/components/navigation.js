@@ -24,6 +24,9 @@ export default function Navigation() {
         <a href="#home" rel="noreferrer">
           <span> Home </span>
         </a>
+        <a href="/blog">
+          <span> Blog </span>
+        </a>
         <a href="#about" rel="noreferrer">
           <span> About </span>
         </a>
