@@ -8,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Blog from './pages/blog';
+import BlogLists from './pages/blogLists';
 
 const router = createBrowserRouter([
   {
@@ -16,8 +17,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/blog",
-    element: <Blog/>,
+    element:<BlogLists/>,
   },
+  {
+    path:"blog/:slug",
+    element:<Blog/>
+  }
   
 ]);
 
