@@ -6,7 +6,9 @@ import Error from "./pages/Error";
 import Navigation from "./components/navigation";
 
 function App() {
-  console.log("Ruthful Hearts <3\n\nIf you are a Ruthful Developer, you can help improve this site by forking and making a PR request on Github. \n\nHere's the link to this project's source code: https://github.com/dagmawibabi/RuthfulHearts \n\nHave fun and protect that ruthful heart of yours! <3")
+  console.log(
+    "Ruthful Hearts <3\n\nIf you are a Ruthful Developer, you can help improve this site by forking and making a PR request on Github. \n\nHere's the link to this project's source code: https://github.com/dagmawibabi/RuthfulHearts \n\nHave fun and protect that ruthful heart of yours! <3",
+  );
   return (
     <div className="bg-[#151515] h-fit text-white w-fit overflow-hidden">
       <Loglib
@@ -14,8 +16,8 @@ function App() {
           id: "ruthfulhearts",
         }}
       />
-        
-        <Main/>
+
+      <Main />
     </div>
   );
 }
