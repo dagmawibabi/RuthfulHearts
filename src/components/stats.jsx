@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { getDomain } from "../lib/utils";
 
 export default function Stats() {
 
@@ -9,7 +10,7 @@ export default function Stats() {
     async function getCash() {
         let result = await axios({
             method: "get",
-            url: "https://ruthfulhearts.com/ruthfulhearts/cash",
+            url: `${getDomain()}/ruthfulhearts/cash`,
             withCredentials: false,
         });
         setCurrentCash(result.data.cash);
