@@ -39,22 +39,30 @@ const Blog = () => {
 
   return (
     <>
-        <Navigation/>
-       
-        <div className="flex h-[86vh] overflow-hidden">
-            <div className='w-[55%]'>
-                <img className='w-full h-full object-cover' src={post.mainImage ? urlForImage(post.mainImage).url() : "fallback-image-url" }
- alt='testing'  />
-            </div>
-            <div className='col-span-1 px-6 overflow-auto w-full'>
-              
-              {/* <p>{post.description}</p> */}
+      <Navigation/>
+
+      <div className="flex h-[86vh] overflow-hidden">
+        <div className='relative w-[65%]'>
+          <div className="absolute bottom-0 flex flex-col gap-0 justify-end items-end w-full h-2/3 bg-gradient-to-t from-black">
             
-                  <PortableTextEditor body={post.body} />
-              
+            <div className="flex gap-2 w-full h-fit items-center px-4 py-2" >
+              <img className='h-[3rem] w-[3rem] rounded-full border-2 border-stone-600 justify-end items-center' src={post.mainImage ? urlForImage(post.mainImage).url() : "fallback-image-url" }  alt='this is a test avatar'/>
+              <ul className="flex flex-col justify-center">
+                <li className='text-xs text-gray-400'>written by</li>
+                <li className='text-gray-200'>{post.author.name}</li>
+              </ul>
             </div>
+            <div className='flex flex-col gap-2 w-full h-fit '>
+              <h3 className='text-2xl font-bold text-stone-300 w-full px-3'>{post.title}</h3>
+            </div>
+          </div>
+          <img className='w-full h-full object-cover' src={post.mainImage ? urlForImage(post.mainImage).url() : "fallback-image-url" } alt='testing'  />
         </div>
-        
+        <div className='col-span-1 px-10 overflow-auto w-full'>
+          {/* <p>{post.description}</p> */}
+          <PortableTextEditor body={post.body} />
+        </div>
+      </div>
     </>
   )
 }
