@@ -37,4 +37,17 @@ export function getDomain() {
     return null;
   }
 
+  export function shortener(text,size){
+    let result; // Declare the type of 'result' as string
+    if(!text){
+      return "No Description Available"
+    }
   
+    if (text.length > size) {
+      result = text.substring(0, size) + "...";
+    } else {
+      result = text;
+    }
+  
+    return result;
+  }
