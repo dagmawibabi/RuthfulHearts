@@ -87,7 +87,7 @@ const PortableTextComponents = {
     
   },
   block:{
-    blockquote: ({children}) => <blockquote className="border-l-8 border-l-amber-600 bg-[#4f342d1c] dark:bg-[#4f342d35] z-0 text-xs md:text-sm text-stone-900 dark:text-stone-300">{children}</blockquote>,
+    blockquote: ({children}) => <blockquote className="border-l-8 border-l-[#61dafb] bg-[#61dafb] text-base">{children}</blockquote>,
     div:({children})=><div className='z-50'>{children}</div>,
     p:({children})=><h1>{children}</h1>,
 

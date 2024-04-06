@@ -45,20 +45,7 @@ code {
 
 
 @layer base {
- :root {
-     --text-color: #bbb;
-     --text-color: #a3a3a3;
- 
-     --text-color-white: #fff;
-     --text-color-dark:var(--background-light)
-     --text-color-bright: #737373;
-     --prim-color: #b94c50;
- 
-     --background: #121212;
-     --background-light: #202020;
 
-     @apply text-lg leading-normal;
- }
  *,
  *:after,
  *:before {
@@ -74,7 +61,7 @@ code {
  
  }
  a {
-     @apply text-black dark:text-stone-100
+     @apply text-[#61dafb]
  }
 
  a:focus {
@@ -112,14 +99,14 @@ code {
      @apply no-underline;
  }
  a {
-     @apply text-primary  ;
+     @apply text-[#61dafb]  ;
  }
  a:hover,
  a:visited:hover {
-     @apply text-zinc-600 ;
+     @apply text-[#407584];
  }
  a:focus {
-     @apply outline-primary no-underline decoration-primary  dark:text-amber-700;
+     @apply outline-primary no-underline decoration-primary  text-[#6cdaff];
  }
  html {
      @apply text-[16px] text-body-text font-body;
@@ -136,7 +123,7 @@ code {
      @apply p-2 border-white border;
  }
  blockquote {
-     @apply relative italic bg-light p-4 mb-6 before:content-[""] before:h-full before:w-1 before:inline-block before:absolute before:top-0 before:left-0 before:right-0 before:bg-primary; 
+     @apply relative italic p-4 mb-6 before:content-[""] before:h-full before:w-1 before:inline-block before:absolute before:top-0 before:left-0 before:right-0 before:bg-[#61dafb] bg-[#1d4b5830]; 
  }
  blockquote p {
      @apply mb-0;
