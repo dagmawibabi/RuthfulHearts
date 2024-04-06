@@ -1,9 +1,6 @@
 import Loglib from "@loglib/tracker/react";
 import Main from "./pages/main";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
-import Blog from "./pages/blog";
-import Error from "./pages/Error";
-import Navigation from "./components/navigation";
+
 
 function App() {
   console.log("Ruthful Hearts <3\n\nIf you are a Ruthful Developer, you can help improve this site by forking and making a PR request on Github. \n\nHere's the link to this project's source code: https://github.com/dagmawibabi/RuthfulHearts \n\nHave fun and protect that ruthful heart of yours! <3")
