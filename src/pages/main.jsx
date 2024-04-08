@@ -15,12 +15,12 @@ function Main() {
     <div className="bg-[#151515] h-fit text-white w-fit overflow-hidden">
       <Navigation />
       <Header />
-      <Stats />
-      <AboutSection />
+      {/* <Stats /> */}
+     <AboutSection/>
       <Donations />
       <FAQ />
       <ContactUs />
-      <ThankYou />
+      {/* <ThankYou /> */}
       <Footer />
     </div>
   );

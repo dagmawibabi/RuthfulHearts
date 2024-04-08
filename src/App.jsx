@@ -1,9 +1,6 @@
 import Loglib from "@loglib/tracker/react";
 import Main from "./pages/main";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
-import Blog from "./pages/blog";
-import Error from "./pages/Error";
-import Navigation from "./components/navigation";
+
 
 function App() {
   console.log(
