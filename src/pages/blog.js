@@ -127,43 +127,46 @@ export default Blog
 const BlogFallback=()=>{
   return(
     <section className='z-20 flex px-1 md:px-12 lg:px-36 flex-col gap-4  items-center w-full min-h-screen'>
-    <div className='flex flex-col gap-4 items-center w-full min-h-screen'>
-      <div className="post-header flex flex-col gap-2 w-[95%] border-b border-b-gray-800">
-            <div className="image-container relative w-full border-none">
-                <div className={`object-cover h-[26rem] bg-[#1d4b5830] animate-pulse border-2 border-[#1d4b5830]`} ></div>
-            </div>
-            <div className=''>
-                <div className='flex justify-between items-center w-full'>
-                    <Link to="/" className='text-sm text-gray-400 px-4'>return to home</Link>
-                    <div className="author-avatar flex gap-2 h-fit items-center  " >
-                        <div className='h-[2rem] w-[2rem] rounded-full border-2 border-stone-600 justify-end items-center bg-[#1d4b5830] animate-pulse' ></div>
-                        <ul className="flex flex-col justify-center">
-                          <li className='text-[10px] text-gray-400'>written by</li>
-                          <li className='text-gray-200 bg-[#1d4b5830] animate-pulse h-2 w-full' />
-                        </ul>
+              <div className="z-20 flex  flex-col gap-4  items-center w-[95%] md:w-[80%] min-h-screen">
+
+                  <div className='flex flex-col gap-4 items-center w-full min-h-screen'>
+                    <div className="post-header flex flex-col gap-2 w-[95%] border-b border-b-gray-800">
+                          <div className="image-container relative w-full border-none">
+                              <div className={`object-cover h-[26rem] bg-[#1d4b5830] animate-pulse border-2 border-[#1d4b5830]`} ></div>
+                          </div>
+                          <div className=''>
+                              <div className='flex justify-between items-center w-full'>
+                                  <Link to="/" className='text-sm text-gray-400 px-4'>return to home</Link>
+                                  <div className="author-avatar flex gap-2 h-fit items-center  " >
+                                      <div className='h-[2rem] w-[2rem] rounded-full border-2 border-stone-600 justify-end items-center bg-[#1d4b5830] animate-pulse' ></div>
+                                      <ul className="flex flex-col justify-center">
+                                        <li className='text-[10px] text-gray-400'>written by</li>
+                                        <li className='text-gray-200 bg-[#1d4b5830] animate-pulse h-2 w-full' />
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div className="title text-start p-0 mt-1  text-4xl bg-[#1d4b5830] animate-pulse w-[70%] h-4"/>
+                              <div className="title text-start p-0 mt-1  text-4xl bg-[#1d4b5830] animate-pulse w-[40%] h-4 mt-2"/>
+
+                              <div className='flex gap-2 w-full justify-start p-2'>
+                                  <div className='bg-[#1d4b5830] w-12 h-4 animate-pulse' />
+                                  <div className='bg-[#1d4b5830] w-12 h-4 animate-pulse' />
+                                  <div className='bg-[#1d4b5830] w-12 h-4 animate-pulse' />
+
+                              </div>
+
+                          </div>
+
+                          <div className='flex w-full justify-start'>                    
+                              <div className='bg-[#1d4b5830] animate-pulse' ></div>               
+                          </div>
                     </div>
-                </div>
-                <div className="title text-start p-0 mt-1  text-4xl bg-[#1d4b5830] animate-pulse w-[70%] h-4"/>
-                <div className="title text-start p-0 mt-1  text-4xl bg-[#1d4b5830] animate-pulse w-[40%] h-4 mt-2"/>
 
-                <div className='flex gap-2 w-full justify-start p-2'>
-                    <div className='bg-[#1d4b5830] w-12 h-4 animate-pulse' />
-                    <div className='bg-[#1d4b5830] w-12 h-4 animate-pulse' />
-                    <div className='bg-[#1d4b5830] w-12 h-4 animate-pulse' />
-
-                </div>
-
-            </div>
-
-            <div className='flex w-full justify-start'>                    
-                <div className='bg-[#1d4b5830] animate-pulse' ></div>               
-            </div>
-      </div>
-
-      <div className="content px-6 flex flex-col gap-4 justify-center w-full">
-              <div className='bg-[#1d4b5830] animate-pulse' ></div>
-      </div>
-    </div>
+                    <div className="content px-6 flex flex-col gap-4 justify-center w-full">
+                            <div className='bg-[#1d4b5830] animate-pulse' ></div>
+                    </div>
+                  </div>
+              </div>
 
     </section>
   )
