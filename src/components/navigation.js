@@ -28,15 +28,15 @@ export default function Navigation() {
         
         <a href="/blog" ><span>Blog</span></a>
         
-        <a href="#about" rel="noreferrer">
+        <a href="/#about" rel="noreferrer">
           <span> About </span>
         </a>
-        <a href="#contact" rel="noreferrer">
+        <a href="/#contact" rel="noreferrer">
           <span> Contact </span>
         </a>
         <div className="gap-3 flex flex-row 
         ">
-          <a href="#donate" rel="noreferrer">
+          <a href="/#donate" rel="noreferrer">
             <div className="duration-300 rounded-full text-emerald-500
               sm:px-5 lg:px-5 xl:px-5 2xl:px-5
               sm:py-2 lg:py-2 xl:py-2 2xl:py-2
@@ -47,7 +47,7 @@ export default function Navigation() {
               <span> Donate </span>
             </div>
           </a>
-          <a href="#thanks" rel="noreferrer">
+          <a href="/#thanks" rel="noreferrer" className="hidden md:block">
             <div className="duration-300 rounded-full text-pink-400
               sm:px-6 lg:px-6 xl:px-6 2xl:px-6
               sm:py-2 lg:py-2 xl:py-2 2xl:py-2

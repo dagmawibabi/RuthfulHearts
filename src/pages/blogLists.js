@@ -49,14 +49,15 @@ const BlogLists = () => {
           <div className='py-10'>
            
             
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-24 pb-24 justify-between items-stretch">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-24 pb-24 justify-between items-stretch">
                   {
                     loading?(
                       <BlogListsFallback/>
                     ):(
                       
                         posts.map((post, index) => (
-                            <div className='flex flex-col justify-between' key={index}>
+                          
+                            <div className='flex flex-col justify-between bg-[#102c3430] p-2 rounded-md cursor-pointer hover:bg-[#1f3f4830] transition-all duration-500' key={index}>
                                 <div >
                                 <img className='object-cover h-[15rem] w-full' src={urlForImage(post.mainImage).url()} alt='example_image' />
                                 <h4 className='p-2'>{shortener(post.title,120)}...</h4>
@@ -64,10 +65,15 @@ const BlogLists = () => {
                                 {index % 2 === 1 && <hr />} 
                                 </div>
                                 <Link to={`/blog/${post?.slug?.current}`} className='px-4 py-2 w-full text-start'>read more</Link>
-                            </div>
+                            </div>                           
+                            
                         ))
+                        
+
+                        
                   
                     )
+
                   }
                 </div>
           </div>
