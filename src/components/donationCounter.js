@@ -5,7 +5,7 @@ import OdometerTimer from "./OdometerTimer";
 export default function DonationCounter() {
   const [totalDonations, setTotalDonations] = useState([]);
 
-  const donationUrl = `https://script.google.com/macros/s/AKfycby5dmeudl0nFk4yYI3yNGmkOlCrw0mCLNEa4lTDtSw2kO4ADQ4bfSPvX567oypY_ivr/exec`;
+  const donationUrl = process.env.REACT_APP_DONATION_API_URL;
 
   const getDonations = async () => {
     try {

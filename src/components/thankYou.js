@@ -1,5 +1,5 @@
-// import { useState } from "react";
-// import axios from "axios";
+import { useState } from "react";
+import axios from "axios";
 import peep from "../images/illustrations/Bust/peep-78.png";
 // 10 61 67
 
@@ -48,8 +48,8 @@ export default function ThankYou() {
       "
       >
         {/* <span className="text-pink-500 "> {visitorCount} </span> Ruthful Hearts */}
-        <span className="text-pink-500 "> {"0"} </span> Ruthful Hearts
-        have been here!
+        <span className="text-pink-500 "> 0 </span> Ruthful Hearts have been
+        here!
       </div>
 
       {/* Thank You */}
