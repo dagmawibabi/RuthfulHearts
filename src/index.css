@@ -44,7 +44,7 @@ code {
 
 
 
-@layer base {
+/* @layer base {
 
  *,
  *:after,
@@ -186,4 +186,4 @@ code {
      .content time {
          @apply text-center block mb-8;
      }
-}
+} */

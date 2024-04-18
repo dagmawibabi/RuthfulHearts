@@ -15,12 +15,12 @@ function Main() {
     
       <Navigation/>
       <Header />
-      {/* <Stats /> */}
+      <Stats />
      <AboutSection/>
       <Donations />
       <FAQ />
       <ContactUs />
-      {/* <ThankYou /> */}
+      <ThankYou />
       <Footer />
     </div>
   );
