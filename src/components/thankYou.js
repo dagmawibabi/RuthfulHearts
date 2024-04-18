@@ -1,5 +1,5 @@
-import { useState } from "react";
-import axios from "axios";
+// import { useState } from "react";
+// import axios from "axios";
 import peep from "../images/illustrations/Bust/peep-78.png";
 // 10 61 67
 
@@ -8,7 +8,7 @@ export default function ThankYou() {
   //   let humanReadableDate = date.toDateString();
 
   // Get and Set Visitor Count
-  const [visitorCount, setVisitorCount] = useState(0);
+  // const [visitorCount, setVisitorCount] = useState(0);
   // async function getVisitorCount() {
   //   const currentDate = new Date();
   //   const year = currentDate.getFullYear();
@@ -47,7 +47,8 @@ export default function ThankYou() {
          lg:text-2xl xl:text-2xl 2xl:text-2xl 
       "
       >
-        <span className="text-pink-500 "> {visitorCount} </span> Ruthful Hearts
+        {/* <span className="text-pink-500 "> {visitorCount} </span> Ruthful Hearts */}
+        <span className="text-pink-500 "> {"0"} </span> Ruthful Hearts
         have been here!
       </div>
 
