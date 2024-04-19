@@ -20,7 +20,7 @@ function Main() {
       <Donations />
       <FAQ />
       <ContactUs />
-      {/* <ThankYou /> */}
+      <ThankYou />
       <Footer />
     </div>
   );
