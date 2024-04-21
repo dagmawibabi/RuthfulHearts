@@ -32,7 +32,7 @@ export function DepthBG() {
 
   return (
     <mesh>
-      <boxGeometry position={[0, 0, 0.8]} args={[1.5, 2, 1.5]} />
+      <boxGeometry position={[0, 0, 0]} args={[1.5, 2, 1.5]} />
       <stripeMaterial side={1} />
     </mesh>
   );

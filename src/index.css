@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 html {
   @apply scroll-smooth;
@@ -11,48 +11,45 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  overflow: hidden;
+  font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 .text-body-text {
   @apply text-stone-900 dark:text-stone-100;
 }
 .font-body {
- font-family: Manrope, system-ui, -apple-system, BlinkMacSystemFont;
+  font-family: Manrope, system-ui, -apple-system, BlinkMacSystemFont;
 }
 .bg-body {
- 
 }
 .text-bright {
- color: var(--text-color-bright);
+  color: var(--text-color-bright);
 }
 .bg-light {
- background-color: var(--background-light);
+  background-color: var(--background-light);
 }
 .border-body-text {
- border-color: var(--text-color);
+  border-color: var(--text-color);
 }
-
-
 
 /* @layer base {
 
  *,
  *:after,
  *:before {
-     @apply m-0 p-0 box-border;
+     @apply box-border p-0 m-0;
  }
  h1 {
-     @apply text-3xl md:text-4xl xl:text-5xl font-extrabold mb-4 text-stone-900 dark:text-white;
+     @apply mb-4 text-3xl font-extrabold md:text-4xl xl:text-5xl text-stone-900 dark:text-white;
  }
  h2 {
      @apply text-3xl;
@@ -69,7 +66,7 @@ code {
  }
  p,
  table {
-     @apply mb-6 text-stone-900 dark:text-gray-300 font-body text-justify  text-lg md:text-neutral;
+     @apply mb-6 text-lg text-justify text-stone-900 dark:text-gray-300 font-body md:text-neutral;
  }
  main {
      @apply mb-8;
@@ -86,7 +83,7 @@ code {
      @apply mb-4 font-extrabold text-stone-900 dark:text-white font-body;
  }
  figcaption {
-     @apply mt-2 text-center text-sm italic block;
+     @apply block mt-2 text-sm italic text-center;
  }
  hr {
      @apply mb-4 border-x-0 border-t-0 border border-b border-[#505050];
@@ -120,7 +117,7 @@ code {
  }
  td,
  th {
-     @apply p-2 border-white border;
+     @apply p-2 border border-white;
  }
  blockquote {
      @apply relative italic p-4 mb-6 before:content-[""] before:h-full before:w-1 before:inline-block before:absolute before:top-0 before:left-0 before:right-0 before:bg-[#61dafb] bg-[#1d4b5830]; 
@@ -129,7 +126,7 @@ code {
      @apply mb-0;
  }
  table {
-     @apply border-collapse w-full overflow-x-scroll block border border-body-text;
+     @apply block w-full overflow-x-scroll border border-collapse border-body-text;
  }
  th {
      @apply text-white;
@@ -142,14 +139,14 @@ code {
  }
  
  .page-intro {
-     @apply text-center w-full mx-auto mb-8 mt-0 max-w-lg;
+     @apply w-full max-w-lg mx-auto mt-0 mb-8 text-center;
  }
 
 }
 
 @layer components {
      .time {
-         @apply text-xs text-bright text-center block;
+         @apply block text-xs text-center text-bright;
      }
      .content {
          @apply block;
@@ -174,7 +171,7 @@ code {
          list-style-type: square;
      }
      .content img {
-         @apply mb-4 block object-cover;
+         @apply block object-cover mb-4;
      }
      .content ul,
      .content ol {
@@ -184,6 +181,6 @@ code {
          @apply mb-0;
      }
      .content time {
-         @apply text-center block mb-8;
+         @apply block mb-8 text-center;
      }
 } */

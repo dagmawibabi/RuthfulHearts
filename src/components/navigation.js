@@ -8,7 +8,8 @@ export default function Navigation() {
        md:justify-between
       lg:flex lg:justify-between
       xl:flex xl:justify-between
-      2xl:flex 2xl:justify-between    
+      2xl:flex 2xl:justify-between  
+      overflow-hidden  
     "
     >
       <div className="flex justify-center">
