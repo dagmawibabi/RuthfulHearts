@@ -20,16 +20,16 @@ export const Experience = () => {
   return (
     <Canvas
       style={{ overflow: "hidden" }}
-      antialias={true}
       shadows
+      dpr={[1, 2]}
       camera={{ position: [0, 0, 6], fov: 30 }}
     >
       <Easing />
-      <BgText />
+      {/* <BgText /> */}
       <color attach="background" args={["#151515"]} />
       <Environment preset="warehouse" blur={0.1} />
       <OrbitControls enableZoom={false} />
-      <ScrollControls pages={7.3} damping={1}>
+      <ScrollControls pages={7.3} damping={0.1}>
         {/* Canvas contents in here will *not* scroll, but receive useScroll! */}
 
         <Scroll>
