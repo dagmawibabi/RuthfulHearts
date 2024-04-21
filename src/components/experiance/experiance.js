@@ -14,7 +14,6 @@ import MARKETERS from "./members/marketers";
 import CONTENT from "./members/contentCreators";
 import EDITING from "./members/editing&schedule";
 import Easing from "./easing";
-import BgText from "./bgText";
 
 export const Experience = () => {
   return (
@@ -25,7 +24,6 @@ export const Experience = () => {
       camera={{ position: [0, 0, 6], fov: 30 }}
     >
       <Easing />
-      {/* <BgText /> */}
       <color attach="background" args={["#151515"]} />
       <Environment preset="warehouse" blur={0.1} />
       <OrbitControls enableZoom={false} />
