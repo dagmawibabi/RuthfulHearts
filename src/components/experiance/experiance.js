@@ -1,11 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import {
-  OrbitControls,
-  Float,
-  Environment,
-  Scroll,
-  ScrollControls,
-} from "@react-three/drei";
+import { Float, Environment, Scroll, ScrollControls } from "@react-three/drei";
 import { Card } from "./Card";
 import DEVText from "./members/devs";
 import GRAPHICS from "./members/grahics";
@@ -26,7 +20,6 @@ export const Experience = () => {
       <Easing />
       <color attach="background" args={["#151515"]} />
       <Environment preset="warehouse" blur={0.1} />
-      <OrbitControls enableZoom={false} />
       <ScrollControls pages={7.3} damping={0.1}>
         {/* Canvas contents in here will *not* scroll, but receive useScroll! */}
 
