@@ -1,0 +1,161 @@
+/* Reset styles */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap");
+
+/* Slide animation */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Team section */
+.team-section {
+  padding: 40px 20px 60px;
+  max-width: 1200px;
+  margin: 80px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 100vh;
+}
+.team-heading {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.team-section p {
+  color: #999;
+  font-size: 18px;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+.names {
+  overflow: hidden;
+  background: #151515;
+  white-space: nowrap;
+  position: relative;
+  padding: 20px 20px;
+  margin: 0;
+  width: 100vw;
+}
+.names-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+/* Team member */
+.team-member {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.team-member a {
+  text-decoration: none;
+  color: inherit;
+}
+.team-member:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #26c6da, #26c6da);
+  z-index: -1;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.team-member:hover:before {
+  transform: translateY(0);
+}
+.team-member span {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+.team-member:hover span {
+  color: #000;
+}
+.team-member p {
+  font-size: 14px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+.team-member:hover p {
+  color: #000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .team-member {
+    margin: 0 10px;
+    padding: 15px;
+  }
+  .team-member span {
+    font-size: 16px;
+  }
+  .team-member p {
+    font-size: 12px;
+  }
+  .team-heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-heading {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .team-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .team-section p {
+    font-size: 16px;
+  }
+  .names {
+    padding: 10px 10px;
+  }
+  .team-member {
+    margin: 0 5px;
+    padding: 10px;
+  }
+  .team-member span {
+    font-size: 14px;
+  }
+  .team-member p {
+    font-size: 10px;
+  }
+}
