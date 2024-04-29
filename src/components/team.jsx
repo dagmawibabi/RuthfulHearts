@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./team.css";
+import "./styles/team.css";
 
 const TeamMembers = () => {
   const teamMembers = [
@@ -121,8 +121,8 @@ const TeamMembers = () => {
   };
 
   return (
-    <div className="w-screen h-screen text-center pt-52 lg:h-screen xl:h-screen 2xl:h-screen">
-      <div className="team-section">
+    <div className="w-screen h-screen ">
+      <div className="team-section" id="teams">
         <h2 className="team-heading">Meet the Team</h2>
         <p>
           The Ruthful Hearts team has a strong belief in changing people's lives

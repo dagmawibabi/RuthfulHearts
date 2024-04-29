@@ -43,8 +43,8 @@ export default function Navigation() {
         <a href="/#contact" rel="noreferrer">
           <span> Contact </span>
         </a>
-        <a href="/#teams">
-          <span> teams </span>
+        <a href="/#teams" rel="noreferrer">
+          <span> Teams </span>
         </a>
         <div className="flex flex-row gap-3 ">
           <a href="/#donate" rel="noreferrer">

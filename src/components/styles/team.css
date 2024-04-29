@@ -1,63 +1,46 @@
 /* Reset styles */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap");
-* {
-  margin: 0 auto;
-  padding: 0;
-  /* box-sizing: border-box; */
-}
-body {
-  background: #151515;
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-}
 
 /* Slide animation */
 @keyframes slide {
   from {
     transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
   }
   to {
     transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
   }
 }
 
 /* Team section */
 .team-section {
-  padding: 40px 20px 60px; /* Adjust padding */
+  padding: 40px 20px 60px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 80px auto 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-self: flex-start; /* Align at the top for PC screens */
-  min-height: 100vh; /* Set a minimum height to fill the viewport */
+  align-self: flex-start;
+  min-height: 100vh;
 }
 .team-heading {
   color: #fff;
   font-family: "Oswald", sans-serif;
-  font-size: 32px;
+  font-size: 50px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 20px; /* Decrease margin bottom */
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 .team-section p {
-  color: #ccc;
+  color: #999;
   font-size: 18px;
-  text-align: center;
+  text-align: justify;
   max-width: 800px;
   margin: 0 auto 40px;
-  line-height: 1.5;
+  line-height: 1.6;
+  padding: 0 20px;
 }
 
 .names {
@@ -145,15 +128,15 @@ body {
     font-size: 12px;
   }
   .team-heading {
-    font-size: 28px; /* Decrease font size for smaller screens */
-    margin-bottom: 30px; /* Increase margin bottom for more spacing */
+    font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .team-heading {
-    font-size: 24px; /* Further decrease font size for smaller screens */
-    margin-bottom: 40px; /* Increase margin bottom for more spacing */
+    font-size: 24px;
+    margin-bottom: 40px;
   }
   .team-section {
     padding-top: 100px;
