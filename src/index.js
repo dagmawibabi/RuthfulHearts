@@ -6,7 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Blog from "./pages/blog";
 import BlogLists from "./pages/blogLists";
-import Teams from "./pages/teams";
 
 const router = createBrowserRouter([
   {
@@ -20,10 +19,6 @@ const router = createBrowserRouter([
   {
     path: "blog/:slug",
     element: <Blog />,
-  },
-  {
-    path: "/teams",
-    element: <Teams />,
   },
 ]);
 
