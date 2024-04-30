@@ -9,7 +9,7 @@ export default function CountdownTimer() {
   const [seconds, setSeconds] = useState("00");
 
   useEffect(() => {
-    const countDownDate = new Date("April 25, 2024 00:00:00").getTime();
+    const countDownDate = new Date("May 5, 2024 00:00:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();

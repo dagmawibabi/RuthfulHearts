@@ -10,24 +10,28 @@ export default function DonationCounter() {
   const getDonations = async () => {
     try {
       const response = await axios.get(donationUrl);
-      const donations = response.data.data;
-      setTotalDonations(donations);
+      if (Array.isArray(response.data.data)) {
+        setTotalDonations(response.data.data);
+      } else {
+        console.error("Response data is not an array");
+      }
     } catch (error) {
-      console.error(error);
+      console.error("Error fetching donations:", error);
     }
   };
 
   useEffect(() => {
     getDonations();
-    const interval = setInterval(() => {
-      getDonations();
-    }, 1000); // Check for updates every second
+    const interval = setInterval(getDonations, 1000); // Check for updates every second
 
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, []);
 
   const getTotalDonation = () => {
-    return totalDonations.reduce((acc, campaign) => acc + campaign.value, 0);
+    return totalDonations.reduce((acc, campaign) => {
+      const value = Number(campaign.value);
+      return isNaN(value) ? acc : acc + value;
+    }, 0);
   };
 
   return (
