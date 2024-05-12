@@ -5,6 +5,7 @@ import { client } from "../lib/sanity/client";
 import PortableTextEditor from "../components/sanity/portableText";
 import { urlForImage } from "../lib/utils";
 import ShareBar from "../components/sharebar";
+import style from "./blog.module.css";
 
 const Blog = () => {
   const params = useParams();
@@ -53,8 +54,10 @@ const Blog = () => {
       {loading ? (
         <BlogFallback />
       ) : (
-        <section className="z-20 flex flex-col items-center w-full min-h-screen gap-4 px-6 md:px-12 lg:px-36">
-          <div className="z-20 flex  flex-col gap-4  items-center w-[95%] md:w-[80%] min-h-screen">
+        <section className="z-20 flex flex-col items-center w-full min-h-screen gap-4 px-4 md:px-12 lg:px-36 bg-[#141416]">
+          <div className="z-20 flex  flex-col gap-4  items-center w-[95%] md:w-[80%] min-h-screen bg-[#141416]">
+            <div className={style.portable}>
+
             <div className="flex flex-col gap-2 border-b post-header border-b-gray-800">
               <div className="relative w-full border-none image-container">
                 <img
@@ -68,9 +71,10 @@ const Blog = () => {
                   <Link to="/" className="px-4 text-sm text-gray-400">
                     return to home
                   </Link>
-                  <div className="flex items-center gap-2 author-avatar h-fit ">
+                  <div className="flex items-center gap-2 author-avatar">
+                    <div className="relative w-[3rem] h-[3rem] rounded-full overflow-hidden border-2 border-stone-600">
                     <img
-                      className="h-[2rem] w-[2rem] rounded-full border-2 border-stone-600 justify-end items-center bg-[#1d4b5830] "
+                      className="   justify-end items-center bg-[#1d4b5830] "
                       src={
                         post.author
                           ? urlForImage(post.author.image).url()
@@ -78,6 +82,7 @@ const Blog = () => {
                       }
                       alt="avatar"
                     />
+                    </div>
                     <ul className="flex flex-col justify-center">
                       <li className="text-[10px] text-gray-400">written by</li>
                       <li className="text-gray-200">
@@ -95,9 +100,11 @@ const Blog = () => {
                 <ShareBar post={post} />
               </div>
             </div>
-            <div className="flex flex-col justify-center w-full gap-4 content">
+            <div >
               <PortableTextEditor body={post.body} />
             </div>
+            </div>
+            
           </div>
 
           {/* <div className="w-full px-2 ">
@@ -127,7 +134,7 @@ export default Blog;
 
 const BlogFallback = () => {
   return (
-    <section className="z-20 flex flex-col items-center w-full min-h-screen gap-4 px-1 md:px-12 lg:px-36">
+    <section className="z-20 flex flex-col items-center w-full min-h-screen gap-4 px-1 md:px-12 lg:px-36 bg-[#141416]">
       <div className="z-20 flex  flex-col gap-4  items-center w-[95%] md:w-[80%] min-h-screen">
         <div className="flex flex-col items-center w-full min-h-screen gap-4">
           <div className="post-header flex flex-col gap-2 w-[95%] border-b border-b-gray-800">
