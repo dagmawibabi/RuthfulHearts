@@ -1,0 +1,99 @@
+    
+    
+
+.portable h1 {
+    @apply text-2xl md:text-4xl xl:text-5xl font-extrabold mb-4 text-white;
+}
+.portable h2 {
+    @apply text-2xl md:text-3xl ;
+}
+
+.portable a {
+    @apply text-[#61dafb] ;
+}
+
+.portable a:focus {
+    @apply no-underline outline-primary;
+}
+.portable p,
+.portable table {
+    @apply mb-6 text-gray-300  text-justify  md:text-xl;
+}
+.portable main {
+    @apply mb-8;
+}
+.portable b, strong {
+    @apply font-bold text-stone-700 dark:text-neutral-300;
+}
+.portable h1,
+.portable h2,
+.portable h3,
+.portable h4,
+.portable h5,
+.portable h6 {
+    @apply mb-4  text-white ;
+}
+.portable figcaption {
+    @apply mt-2 text-center text-sm italic block;
+}
+.portable hr {
+    @apply mb-4 border-x-0 border-t-0 border border-b border-[#505050];
+}
+.portable img {
+    @apply w-full max-w-full;
+}
+.portable a > img,
+.portable a:hover > img {
+    @apply no-underline;
+}
+.portable a {
+    @apply text-[#61dafb]  ;
+}
+.portable a:hover,
+.portable a:visited:hover {
+    @apply text-[#419ab3] ;
+}
+.portable a:focus {
+    @apply outline-primary no-underline decoration-primary  dark:text-amber-700;
+}
+html {
+    @apply text-[16px]  ;
+}
+.portable ul,
+.portable ol {
+    @apply text-stone-900 dark:text-white ;
+}
+.portable body {
+    @apply bg-stone-200 dark:bg-stone-950 ;
+}
+.portable td,
+.portable th {
+    @apply p-2 border-white border;
+}
+.portable blockquote {
+    @apply relative italic  p-4 mb-6 before:content-[""] before:h-full before:w-1 before:inline-block before:absolute before:top-0 before:left-0 before:right-0 before:bg-[#38accc] bg-[#1737406d] ;  
+}
+.portable blockquote p {
+    @apply mb-0 text-neutral;
+}
+.portable table {
+    @apply border-collapse w-full overflow-x-scroll block border ;
+}
+.portable th {
+    @apply text-white;
+}
+.portable em {
+    @apply flex flex-wrap overflow-x-hidden
+}
+.portable i {
+    @apply text-stone-800 dark:text-stone-300 font-semibold
+}
+
+.portable .page-intro {
+    @apply text-center w-full mx-auto mb-8 mt-0 max-w-lg;
+}
+
+
+.portable iframe {
+    @apply my-[3rem] mx-2 md:mx-4 border-none bg-[#152d347e];
+}
