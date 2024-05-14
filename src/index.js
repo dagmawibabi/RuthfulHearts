@@ -10,16 +10,16 @@ import BlogLists from "./pages/blogLists";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <App />
   },
   {
     path: "/blog",
-    element: <BlogLists />,
+    element: <BlogLists />
   },
   {
     path: "blog/:slug",
-    element: <Blog />,
-  },
+    element: <Blog />
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
