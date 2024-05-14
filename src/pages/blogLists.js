@@ -38,12 +38,12 @@ const BlogLists = () => {
   return (
     <>
       <Navigation />
-      <section className="">
+      <section className="bg-[#141416]">
         <header className="flex flex-col items-center justify-center p-4 border-b-2 md:p-12 border-b-zinc-900">
           <h1 className="text-center md:text-6xl font-extralight">
             Ruthful Blogs
           </h1>
-          <p className="text-center md:w-[50%]">
+          <p className="text-center md:w-[50%] py-2 md:text-lg">
             Discover tales of transformation, anonymous acts of kindness, and
             the power of compassion on our Ruthful Hearts blog.
           </p>
@@ -54,8 +54,9 @@ const BlogLists = () => {
               <BlogListsFallback />
             ) : (
               posts.map((post, index) => (
-                <div
-                  className="flex flex-col justify-between bg-[#102c3430] p-2 rounded-md cursor-pointer hover:bg-[#1f3f4830] transition-all duration-500"
+                <Link
+                  to={`/blog/${post?.slug?.current}`}
+                  className="flex flex-col justify-between bg-[#0b1d2230] p-2 rounded-md cursor-pointer hover:bg-[#1f3f4830] transition-all duration-500"
                   key={index}
                 >
                   <div>
@@ -64,19 +65,14 @@ const BlogLists = () => {
                       src={urlForImage(post.mainImage).url()}
                       alt="example_image"
                     />
-                    <h4 className="p-2">{shortener(post.title, 120)}...</h4>
-                    <p className="px-2">
+                    <h1 className="p-2 text-xl md:text-2xl font-extrabold text-white">{shortener(post.title, 120)}...</h1>
+                    <p className="px-2 text-md md:text-xl">
                       {shortener(post.description, 120)}...
                     </p>
                     {index % 2 === 1 && <hr />}
                   </div>
-                  <Link
-                    to={`/blog/${post?.slug?.current}`}
-                    className="w-full px-4 py-2 text-start"
-                  >
-                    read more
-                  </Link>
-                </div>
+                  <Link className="w-full px-4 py-2 text-start">read more</Link>
+                </Link>
               ))
             )}
           </div>

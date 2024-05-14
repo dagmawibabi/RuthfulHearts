@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Welcome to Ruthful Hearts! 🥰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Changing One Person's Life One at a Time => More with Your Help ❤️
 
-## Available Scripts
+At Ruthful Hearts, we believe in the power of compassion to change lives, one person at a time. Our mission is simple: to spread love, kindness, and hope to those in need. With our core principles guiding us, we strive to make a meaningful difference in the world.
 
-In the project directory, you can run:
+## Our Website
 
-### `npm start`
+Our website serves as a digital hub for our community, providing resources, updates, and opportunities to get involved.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tech Stack:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Sanity.io](https://www.sanity.io/)
 
-### `npm test`
+## Our Core Principles:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Anonymous Donations:** Charity is about selflessly helping others, without seeking recognition or praise. That's why we keep the identities of our donors private. Whether you contribute through traditional payment methods or the latest crypto options, your generosity remains anonymous and deeply appreciated. 👤
 
-### `npm run build`
+2. **For All Kinds of People:** At Ruthful Hearts, we value every human life, regardless of background or circumstance. We stand against discrimination in all its forms, because we believe that everyone deserves compassion and support. We're here to offer a helping hand, because everyone deserves a chance to start anew and thrive! 🤝
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **One at a Time:** Change doesn't happen overnight, but with each fundraising campaign, we're making a difference. By pooling our resources and focusing on one individual at a time, we're able to create real and lasting impact. From providing essential support to life-changing opportunities, we're dedicated to transforming lives for the better. ⏳
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Private and Graceful:** Respect, dignity, and privacy are at the heart of everything we do. We understand the importance of safeguarding personal information and preserving the anonymity of those we help. That's why we maintain strict confidentiality within the Ruthful community, ensuring that each individual's journey is treated with the utmost care and respect. ✨
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Get Involved! 🌟
 
-### `npm run eject`
+Ready to join us in spreading compassion and changing lives? Whether you're interested in donating, volunteering, or simply spreading the word, there's a place for you in the Ruthful Hearts family. Together, we can make the world a brighter, kinder place, one act of kindness at a time.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Follow Us on Social Media:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ![Twitter Follow](https://img.shields.io/twitter/follow/RuthfulHearts?style=social) [Twitter](https://twitter.com/RuthfulHearts)
+- ![Instagram Follow](https://img.shields.io/badge/Follow-%40RuthfulHearts-orange) [Instagram](https://www.instagram.com/RuthfulHearts)
+- ![Facebook Follow](https://img.shields.io/badge/Follow-%40RuthfulHearts-blue) [Telegram](https://t.me/RuthfulHearts)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Join us on this journey of love and transformation! ❤️
