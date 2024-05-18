@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap");
+/* Import Montserrat and Oswald fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@700&display=swap");
 
 /* Slide animation */
 @keyframes slide {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-100%);
   }
 }
@@ -19,13 +20,14 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  background-color: #151515;
 }
 
 .team-heading {
   color: #fff;
   font-family: "Oswald", sans-serif;
-  font-size: 48px;
-  font-weight: bold;
+  font-size: clamp(28px, 5vw, 48px); /* responsive font size */
+  font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
   text-transform: uppercase;
@@ -35,7 +37,7 @@
 .team-section p {
   color: #ccc;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: clamp(12px, 2vw, 16px); /* responsive font size */
   text-align: center;
   max-width: 800px;
   margin-bottom: 60px;
@@ -44,7 +46,6 @@
 
 .names {
   overflow: hidden;
-  background: #151515;
   white-space: nowrap;
   position: relative;
   padding: 20px 10px;
@@ -67,12 +68,43 @@
   padding: 10px;
   background-color: #333;
   border-radius: 8px;
-  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
   width: 200px;
   height: 300px;
   cursor: pointer;
+  transition: transform 0.5s, box-shadow 0.5s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-member::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 255, 255, 0.8) 50%
+  );
+  background-size: 100% 200%;
+  transition: background-position 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.team-member:hover::before {
+  background-position: 0% 100%;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+}
+
+.team-member:hover .team-member-info {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .team-member .photo-container {
@@ -82,6 +114,7 @@
   height: 200px;
   overflow: hidden;
   position: relative;
+  z-index: 2;
 }
 
 .team-member .photo {
@@ -91,6 +124,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform 0.5s;
+}
+
+.team-member:hover .photo {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .team-member-info {
@@ -103,7 +141,8 @@
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  transition: background-color 0.5s;
 }
 
 .team-member-info span,
@@ -114,8 +153,8 @@
 
 .team-member span {
   font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: clamp(12px, 2vw, 16px); /* responsive font size */
+  font-weight: 700;
   margin-right: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -124,7 +163,7 @@
 
 .team-member p {
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: clamp(10px, 1.5vw, 12px); /* responsive font size */
   text-align: left;
   color: #ccc;
 }
@@ -138,28 +177,22 @@
   border-radius: 30px;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: clamp(14px, 2vw, 16px); /* responsive font size */
+  font-weight: 700;
   text-align: center;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.5s, color 0.5s, transform 0.5s, box-shadow 0.5s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .team-link:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: aqua;
+  color: #151515;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .team-heading {
-    font-size: 36px;
-  }
-
-  .team-section p {
-    font-size: 14px;
-  }
-
   .team-member {
     width: 180px;
     height: 280px;
@@ -172,31 +205,9 @@
   .team-member .photo {
     height: 180px;
   }
-
-  .team-member span {
-    font-size: 14px;
-  }
-
-  .team-member p {
-    font-size: 11px;
-  }
 }
 
 @media (max-width: 480px) {
-  .team-heading {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-
-  .team-section p {
-    font-size: 12px;
-    margin-bottom: 40px;
-  }
-
-  .names {
-    padding: 10px;
-  }
-
   .team-member {
     margin: 0 5px;
     width: 150px;
@@ -209,13 +220,5 @@
 
   .team-member .photo {
     height: 120px;
-  }
-
-  .team-member span {
-    font-size: 12px;
-  }
-
-  .team-member p {
-    font-size: 10px;
   }
 }

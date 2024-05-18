@@ -36,7 +36,7 @@ const Preloader = React.memo(({ setCharged }) => {
     tl.to(
       aux,
       {
-        duration: 40,
+        duration: 5,
         value: 100,
         ease: "power2.inOut",
         onUpdate: () => {

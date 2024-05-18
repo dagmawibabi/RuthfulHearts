@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useMemo } from "react";
+import React, { useEffect, useRef, useState, useMemo, Suspense } from "react";
 import imagesLoaded from "imagesloaded";
 import "./styles/team.css";
 
@@ -193,9 +193,15 @@ const TeamMembers = ({ charged, setCharged }) => {
                 className="team-member"
                 onClick={() => handleLinkClick(member.link)}
               >
-                <div className="photo-container">
-                  <img src={member.photo} alt={member.name} className="photo" />
-                </div>
+                <Suspense>
+                  <div className="photo-container">
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className="photo"
+                    />
+                  </div>
+                </Suspense>
                 <span>{member.name}</span>
                 <p>{member.role}</p>
               </div>
@@ -208,7 +214,7 @@ const TeamMembers = ({ charged, setCharged }) => {
           rel="noopener noreferrer"
           className="team-link"
         >
-          Want to explore our team further? click here
+          explore the team further
         </a>
       </div>
     </div>
