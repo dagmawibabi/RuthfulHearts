@@ -1,7 +1,7 @@
 /* Import Montserrat and Oswald fonts from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@700&display=swap");
 
-/* Slide animation */
+/* Keyframes for slide animation */
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -11,7 +11,7 @@
   }
 }
 
-/* Team section */
+/* Team Section Styles */
 .team-section {
   padding: 60px 20px;
   max-width: 1200px;
@@ -26,7 +26,7 @@
 .team-heading {
   color: #fff;
   font-family: "Oswald", sans-serif;
-  font-size: clamp(28px, 5vw, 48px); /* responsive font size */
+  font-size: clamp(28px, 5vw, 48px);
   font-weight: 700;
   text-align: center;
   margin-bottom: 40px;
@@ -35,15 +35,17 @@
 }
 
 .team-section p {
-  color: #ccc;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(12px, 2vw, 16px); /* responsive font size */
+  font-size: clamp(12px, 2vw, 16px);
   text-align: center;
   max-width: 800px;
   margin-bottom: 60px;
   line-height: 1.6;
+  z-index: 0;
 }
 
+/* Names Slide Container */
 .names {
   overflow: hidden;
   white-space: nowrap;
@@ -61,7 +63,7 @@
   animation: 35s slide infinite linear;
 }
 
-/* Team member */
+/* Team Member Styles */
 .team-member {
   display: inline-block;
   margin: 0 10px;
@@ -73,8 +75,9 @@
   width: 200px;
   height: 300px;
   cursor: pointer;
-  transition: transform 0.5s, box-shadow 0.5s;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 0;
 }
 
 .team-member::before {
@@ -91,7 +94,7 @@
   );
   background-size: 100% 200%;
   transition: background-position 0.3s ease-in-out;
-  z-index: 1;
+  z-index: -1;
 }
 
 .team-member:hover::before {
@@ -99,8 +102,9 @@
 }
 
 .team-member:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(1.05);
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 
 .team-member:hover .team-member-info {
@@ -124,15 +128,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 0.5s;
+  transition: transform 0.5s ease;
 }
 
 .team-member:hover .photo {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) scale(1.1) rotate(3deg);
 }
 
 .team-member-info {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,7 +145,7 @@
   text-align: center;
   position: relative;
   z-index: 2;
-  transition: background-color 0.5s;
+  transition: background-color 0.5s ease;
 }
 
 .team-member-info span,
@@ -153,21 +156,37 @@
 
 .team-member span {
   font-family: "Oswald", sans-serif;
-  font-size: clamp(12px, 2vw, 16px); /* responsive font size */
+  font-size: clamp(12px, 2vw, 16px);
   font-weight: 700;
   margin-right: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
+  z-index: 0;
 }
 
 .team-member p {
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(10px, 1.5vw, 12px); /* responsive font size */
+  font-size: clamp(10px, 1.5vw, 12px);
   text-align: left;
-  color: #ccc;
+  color: #fff;
+  z-index: 0;
+}
+.team-member:hover .team-member-info,
+.team-section p,
+.team-member:hover .team-member-info span,
+.team-member:hover .team-member-info p,
+.team-member:hover span {
+  color: #000;
 }
 
+.team-member:hover .team-member-info span,
+.team-section p,
+.team-member:hover .team-member-info p {
+  color: inherit;
+}
+
+/* Team Link Button */
 .team-link {
   display: inline-block;
   margin-top: 40px;
@@ -177,21 +196,22 @@
   border-radius: 30px;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: clamp(14px, 2vw, 16px); /* responsive font size */
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 700;
   text-align: center;
-  transition: background-color 0.5s, color 0.5s, transform 0.5s, box-shadow 0.5s;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease,
+    box-shadow 0.5s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .team-link:hover {
   background-color: aqua;
   color: #151515;
-  transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
-/* Responsive styles */
+/* Responsive Styles */
 @media (max-width: 768px) {
   .team-member {
     width: 180px;
