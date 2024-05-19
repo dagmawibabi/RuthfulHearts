@@ -9,7 +9,7 @@ function App() {
     <div className="bg-[#151515] h-fit text-white w-fit ">
       <Loglib
         config={{
-          id: "ruthfulhearts",
+          id: "ruthfulhearts"
         }}
       />
 
