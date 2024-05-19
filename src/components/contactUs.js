@@ -51,7 +51,7 @@ export default function ContactUs() {
         </a>
         {/* X (Twitter) */}
         <a href={Xlink} target="_blank" rel="noreferrer">
-          <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-white [&>*:first-child]:hover:border-black">
+          <div className="text-center flex flex-col gap-y-5 hover:gap-y-3 duration-300 [&>*:first-child]:hover:bg-white [&>*:first-child]:hover:border-cyan-500">
             <div className="rounded-3xl p-0 border-4 pl-[1px] bg-white lg:bg-white xl:bg-white 2xl:bg-white lg:p-2 xl:p-2 2xl:p-2">
               <img
                 src={X}
