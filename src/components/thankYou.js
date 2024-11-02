@@ -8,23 +8,23 @@ export default function ThankYou() {
   //   let humanReadableDate = date.toDateString();
 
   // Get and Set Visitor Count
-  // const [visitorCount, setVisitorCount] = useState(0);
-  // async function getVisitorCount() {
-  //   const currentDate = new Date();
-  //   const year = currentDate.getFullYear();
-  //   const month = String(currentDate.getMonth() + 1).padStart(2, "0");
-  //   const day = String(currentDate.getDate() + 1).padStart(2, "0");
-  //   const formattedDate = `${year}-${month}-${day}`;
-  //   let visitorCountResult = await axios({
-  //     method: "get",
-  //     url: `https://api.loglib.io/v1/insight?apiKey=site_eguixpf980&startDate=2023-09-11&endDate=${formattedDate}&timeZone=Africa/Addis_Ababa`,
-  //     withCredentials: false,
-  //   });
-  //   console.log("visitorCountResult");
-  //   console.log(visitorCountResult);
-  //   setVisitorCount(visitorCountResult.data.insight.totalPageViews.current);
-  // }
-  // getVisitorCount();
+  const [visitorCount, setVisitorCount] = useState(0);
+  async function getVisitorCount() {
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = String(currentDate.getMonth() + 1).padStart(2, "0");
+    const day = String(currentDate.getDate() + 1).padStart(2, "0");
+    const formattedDate = `${year}-${month}-${day}`;
+    let visitorCountResult = await axios({
+      method: "get",
+      url: `https://api.loglib.io/v1/insight?apiKey=site_kod5oihihi&startDate=2023-09-11&endDate=${formattedDate}&timeZone=Africa/Addis_Ababa`,
+      withCredentials: false,
+    });
+    console.log("visitorCountResult");
+    console.log(visitorCountResult);
+    setVisitorCount(visitorCountResult.data.insight.totalPageViews.current);
+  }
+  getVisitorCount();
   return (
     <div
       id="thanks"
@@ -49,8 +49,8 @@ export default function ThankYou() {
          lg:text-2xl xl:text-2xl 2xl:text-2xl 
       "
       >
-        {/* <span className="text-pink-500 "> {visitorCount} </span> Ruthful Hearts */}
-        <span className="text-pink-500 "> 0 </span> Ruthful Hearts have been
+        <span className="text-pink-500 "> {visitorCount} </span> Ruthful Hearts 
+        {/* <span className="text-pink-500 "> 0 </span> Ruthful Hearts */} have been
         here!
       </div>
 
